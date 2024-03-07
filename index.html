@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo limpio</title>
-    <link rel="stylesheet" href="/Vista/style/normalize.css"><!--estandarizar los estilos de todos los navegadores-->
-    <link rel="stylesheet" href="/Vista/Bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="/Vista/style/style.css"><!--Estilo principal-->
+    <link rel="stylesheet" href="./Vista/style/normalize.css"><!--estandarizar los estilos de todos los navegadores-->
+    <link rel="stylesheet" href="./Vista/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./Vista/style/style.css"><!--Estilo principal-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--tipografia de letra-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Mundo Limpio/Vistas/maincss/style.css">
+    <link rel="stylesheet" href="./Mundo Limpio/Vistas/maincss/style.css">
 </head>
 <body>
     <div class="Container">
+<!----------------------------------------------------------------------------------------------------encabezado-->
+        
+    </div>
+    <!----------------------------------templates------------------------------------------>
+
+
+
+    <template id prueba>
         <!---------------------------------------------------------------------------------------------encabezado-->
         <div class="row">
             <div class="col-12" id="Encabezado">
@@ -41,12 +49,15 @@
                     </svg></a>
             </div>
         </div>
-    </div>
-    <!----------------------------------templates------------------------------------------>
-    <template id="InicioSesion">
+    </template>
+
+
+
+
+    <template id="LogIn">
         <div class="row" class="Encabezado"> <!--Area donde se ubica el logo----------------------------------------------------------->
             <div class="col-12">
-                <img src="/Recursos/page/logo redimencionado.png" alt="logo" id="logo" width="200px">
+                <img src="./Recursos/page/logo redimencionado.png" alt="logo" id="Logo" width="200px">
             </div>
         </div>
         <div class="row">
@@ -73,7 +84,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="PieDePagina">
-                    <a href="/register" id="bttnRegitrar">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                    <a href="/register" id="BtnFormRegis">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                         <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                         <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
                         </svg></a> | <a href="#" id="bttnRegisEmpresa">Registra tu empresa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
@@ -84,10 +95,16 @@
         </div>
     </template>
 
+
     
-    <template id="FormRegisEmpresa">
+    <template id="FormRegisUsuario">
         
     </template>
+
+
+
+
+    
     <!--------------------------------Controladores ---------------------------------------->
     
     <script src="controlador.js"></script>
