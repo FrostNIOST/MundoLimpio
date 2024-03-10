@@ -14,9 +14,9 @@
 </head>
 <body>
     <div class="Container">
-<!----------------------------------------------------------------------------------------------------encabezado-->
-        
-    </div>
+
+
+    </div> <!--div/ container-->
     <!----------------------------------templates------------------------------------------>
 
 
@@ -55,13 +55,14 @@
 
 
     <template id="LogIn">
+    <!----------------------------------------------------------------------------------------------------encabezado-->
         <div class="row" class="Encabezado"> <!--Area donde se ubica el logo----------------------------------------------------------->
             <div class="col-12">
                 <img src="./Recursos/page/logo redimencionado.png" alt="logo" id="Logo" width="200px">
             </div>
         </div>
         <div class="row">
-            <!--Area de trabajo------------------------------------------------------------------------------------------------------>
+            <!--Contenido------------------------------------------------------------------------------------------------------>
             <div class="col-12">
                 <div class="Contenido">
                     <div class="formulario">
@@ -98,7 +99,48 @@
 
     
     <template id="FormRegisUsuario">
-        
+        <div class="row">
+            <div class="col-12" id="Encabezado">
+                <h1 class="titulo">Registro<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg></h1> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="Contenido">
+                <div class="formulario">
+                    <form method="post" action="/register">
+                        <div class="username">
+                            <input type="text" name="name" id="NombreUsuario" required>
+                            <label> Nombre </label>
+                        </div>
+                        <div class="email">
+                            <input type="email" name="email" id="CorreoElectronico" required>
+                            <label> Email </label>
+                        </div>
+                        <div class="phone">
+                            <input type="tel" name="phone" id="NumeroCelular" required>
+                            <label> Celular </label>
+                        </div>
+                        <div class="birthdate">
+                            <input type="date" name="birthdate" id="FechaDeNacimiento" required>
+                            <label> Fecha de nacimiento </label>
+                        </div>
+                        <div class="password">
+                            <input type="password" name="password" id="Contraseña" required>
+                            <label> Contraseña </label>
+                        </div>
+                        <div class="confirm-password">
+                            <input type="password" name="confirm-password" required>
+                            <label> Confirmar contraseña </label>
+                        </div>
+                        <input type="submit" value="Crear" id="BtnCrear">
+                        <h4>Ya tienes cuenta <a href="#" id="IniciarSesion">Inicia  sesión</a>.</h4>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
     </template>
 
 

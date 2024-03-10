@@ -30,6 +30,13 @@ a {
 
     }
 
+h4 {
+    color: grey;
+    margin-left: 10%;
+    font-size: 114%;
+
+} 
+
 h3 {
     font-size: 120%;
     color: grey;
@@ -69,7 +76,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5% 25%;
+    padding: 5% 5%;
+    /*padding: 5% 25%;*/
+    padding-top: 0%;
 }
 #BtnInicio {
     border-radius: 25px;
@@ -93,7 +102,21 @@ h1 {
     top: -5px;
 }
 
-/*--------------------------------------------------------------------pantalla de inicio---*/
+/*--------------------------------------------------------------------pantalla de inicio y pantallas de registro---*/
+/*-------------------------------------------------------------------------------encabezado--------------------*/
+.titulo {
+    width: 100%;
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 35px;
+    margin: auto;
+    margin-top: 13%;
+    margin-bottom: 13%;
+
+}
+
+/*---------------------------------------------------------------------------------Contenido-----------------*/
+/* Estilos para el formulario */
+
 .formulario {
     margin: 6%;
     top: auto;
@@ -102,25 +125,32 @@ h1 {
     height: max-content;
     
 }
+
 .formulario form {
     padding: 40px;
     box-sizing: border-box;
 
 }
-form .username {  /*correo*/  
+.username,
+.email,
+.phone,
+.birthdate,
+.password,
+.confirm-password {
     position: relative;
     border-bottom: 2px solid #A4B092;
-    margin: 45px 0;
+    margin: 30px 0;
+    width: auto;
 
 }
 
-.formulario {
+/*.formulario {
     display: flex;
     width: 100% auto;
     border-bottom: 2px solid #A4B092;
     border: 0;
 
-}
+}*/
 
 .formulario .contraseña {
     position: relative;
@@ -129,7 +159,12 @@ form .username {  /*correo*/
     width: auto;
 }
 
-.contraseña input {
+.username input,
+.email input,
+.phone input,
+.birthdate input,
+.password input,
+.confirm-password input {
     width: 100px;
     padding: 0 5px;
     height: 40px;
@@ -141,7 +176,12 @@ form .username {  /*correo*/
     border: none;
 }
 
-.contraseña label {
+.username label,
+.email label,
+.phone label,
+.birthdate label,
+.password label,
+.confirm-password label {
     position: absolute;
     top: 20px;
     left: 10px;
@@ -150,59 +190,73 @@ form .username {  /*correo*/
     font-size: 21px;
     pointer-events: none;
     transition: .5s;
-
 }
 
-.formulario input[type="text"],
+/*.formulario input[type="text"],
 .formulario input[type="password"] {
     width: 100%; /* Ocupar todo el ancho del contenedor width: calc(100% - 12px) */
-    padding: 5px; /* Espaciado interno del campo */
-    border: none; /* Eliminar borde del campo */
-    border-radius: 5px; /* Borde redondeado */
-    text-align: left; /* Posiciona el texto al principio del campo */
-}
+ /*   padding: 5px; /* Espaciado interno del campo */
+  /*  border: none; /* Eliminar borde del campo */
+  /*  border-radius: 5px; /* Borde redondeado */
+  /*  text-align: left; /* Posiciona el texto al principio del campo */
+/*}*/
 
 #FormLogin {
     width: 100%;
     height: 100%;
 }
 
-.contraseña input:focus ~ label,
+/*.contraseña input:focus ~ label,
 .contraseña input:focus ~ label {
     top: -5px;
     color: #283E30;
-}
+}*/
 
-.contraseña input:focus ~ span:before,
+/*.contraseña input:focus ~ span:before,
 .contraseña input:focus ~ span:before {
     width: 100px;
-}
+}*/
 
 
-.username input{
+.username input,
+.email input,
+.phone input,
+.birthdate input,
+.password input,
+.confirm-password input {
     width: 100px;
     padding: 0 5px;
     height: 40px;
     font-size: 21px;
-    border: none;
+    box-sizing: 70px;
+    border-color: #A4B092;
     background: none;
     outline: none;
-
+    border: none;
 }
 
-.username label {
+.username label,
+.email label,
+.phone label,
+.birthdate label,
+.password label,
+.confirm-password label {
     position: absolute;
-    top: 21px;
-    left: 5px;
+    top: 20px;
+    left: 10px;
     color: #B6C0A8;
     transform: translateY(-50%);
     font-size: 21px;
     pointer-events: none;
     transition: .5s;
-
 }
 
-.username span::before{
+.username span::before,
+.email span::before,
+.phone span::before,
+.birthdate span::before,
+.password span::before,
+.confirm-password span::before {
     content: "";
     position: absolute;
     top: 40px;
@@ -213,14 +267,22 @@ form .username {  /*correo*/
     transition: .5s;
 }
 
-.username input:focus~ label,
-.username input:focus~ label{
+.username input:focus ~ label,
+.email input:focus ~ label,
+.phone input:focus ~ label,
+.birthdate input:focus ~ label,
+.password input:focus ~ label,
+.confirm-password input:focus ~ label {
     top: -5px;
     color: #283E30;
 }
 
 .username input:focus ~ span:before,
-.username input:focus ~ span:before{
+.email input:focus ~ span:before,
+.phone input:focus ~ span:before,
+.birthdate input:focus ~ span:before,
+.password input:focus ~ span:before,
+.confirm-password input:focus ~ span:before {
     width: 100px;
 }
 
@@ -253,6 +315,10 @@ input[type = "submit"]:hover {
 
 .registrarse a:hover{
     text-decoration: underline;
+}
+
+#IniciarSesion {
+    color: #283E30;
 }
 
 /*------------------------------------------------------------------Pie de pagina*/
