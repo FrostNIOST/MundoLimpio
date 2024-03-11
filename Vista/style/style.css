@@ -136,6 +136,7 @@ h1 {
 .phone,
 .birthdate,
 .password,
+.NumNIT,
 .confirm-password {
     position: relative;
     border-bottom: 2px solid #A4B092;
@@ -164,6 +165,7 @@ h1 {
 .phone input,
 .birthdate input,
 .password input,
+.NumNIT input,
 .confirm-password input {
     width: 100px;
     padding: 0 5px;
@@ -181,6 +183,7 @@ h1 {
 .phone label,
 .birthdate label,
 .password label,
+.NumNIT  label,
 .confirm-password label {
     position: absolute;
     top: 20px;
@@ -223,6 +226,7 @@ h1 {
 .phone input,
 .birthdate input,
 .password input,
+.NumNIT input,
 .confirm-password input {
     width: 100px;
     padding: 0 5px;
@@ -240,6 +244,7 @@ h1 {
 .phone label,
 .birthdate label,
 .password label,
+.NumNIT label,
 .confirm-password label {
     position: absolute;
     top: 20px;
@@ -256,6 +261,7 @@ h1 {
 .phone span::before,
 .birthdate span::before,
 .password span::before,
+.NumNIT span::before,
 .confirm-password span::before {
     content: "";
     position: absolute;
@@ -272,6 +278,7 @@ h1 {
 .phone input:focus ~ label,
 .birthdate input:focus ~ label,
 .password input:focus ~ label,
+.NumNIT input:focus ~ label,
 .confirm-password input:focus ~ label {
     top: -5px;
     color: #283E30;
