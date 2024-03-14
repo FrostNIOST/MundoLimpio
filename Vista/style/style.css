@@ -664,3 +664,94 @@ input[type = "submit"]:hover {
       opacity: 1;
     }
   }
+
+/* --------------------------------------------------------------------------menu*/
+
+.MenuDeOpciones {
+    background-color: #EEECE8;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    min-height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.BtnsMenuSuperior {
+  display: flex;
+  background-color: transparent;
+  border-color: transparent;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+  background-image: url(/Recursos/page/FondoPagina.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+
+#TituloMenu{
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  font-size: 20px;
+  margin-top: 22px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button svg {
+  fill: #696968; /* Color del ícono */
+  width: 80px; /* Aumenta el tamaño del ícono */
+  height: 70px; /* Aumenta el tamaño del ícono */
+  vertical-align: middle; /* Alinear verticalmente el ícono */
+  margin-right: 12px; /* Margen a la derecha del ícono para separarlo del texto */
+  float: right;
+
+}
+
+/*#extra-buttons {
+  position: absolute; /* Posición absoluta dentro del contenedor */
+  /*top: 10px; /* Ajusta la posición desde la parte superior */
+  /*left: 50%; /* Ajusta la posición desde el centro */
+  /*transform: translateX(-50%); /* Centra horizontalmente los botones */
+  /*right: 10px;
+}*/
+
+/*.extra-button {
+  margin: 0 -165px;
+  padding: 0 0;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}*/
+
+.MenuDeOpciones .button {
+  width: auto; /* Ancho igual al alto para hacerlo cuadrado */
+  height: auto; /* Alto igual al ancho para hacerlo cuadrado */
+  border-radius: 5px; /* Bordes circulares para hacer el botón redondo */
+  background-color: #BFC4AC;
+}
+
+/* Estilos para los botones regulares */
+.buttons .button {
+  border: none; /* Eliminar bordes */
+  border-radius: 20px; /* Esquinas redondeadas */
+  padding: 25px 18px; /* Ajustar el tamaño */
+  width: calc(50% - 20px); /* Ancho del 50% del contenedor menos el margen */
+  margin: 7px; /* Margen entre los botones */
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho */
+  font-size: 15px; /* Tamaño de fuente */
+  font-family: "Sora", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #696968;
+}
+
