@@ -89,6 +89,7 @@ h1 {
 #Encabezado {
     padding: 0%;
     margin: 0;
+    width: 100%;
 }
 
     #Logo {
@@ -667,10 +668,84 @@ input[type = "submit"]:hover {
 
 /* --------------------------------------------------------------------------menu*/
 
-#extra-buttons {
-  position: absolute; /* Posición absoluta dentro del contenedor */
-  top: 10px; /* Ajusta la posición desde la parte superior */
-  left: 50%; /* Ajusta la posición desde el centro */
-  transform: translateX(-50%); /* Centra horizontalmente los botones */
-  right: 10px;
+.MenuDeOpciones {
+    background-color: #EEECE8;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+
+
+.button svg {
+  fill: #696968; /* Color del ícono */
+  width: 80%; /* Aumenta el tamaño del ícono */
+  height: 70px; /* Aumenta el tamaño del ícono */
+  vertical-align: middle; /* Alinear verticalmente el ícono */
+  margin-right: 12px; /* Margen a la derecha del ícono para separarlo del texto */
+  float: right;
+
+}
+
+
+.MenuDeOpciones .button {
+  width: 100% auto; /* Ancho igual al alto para hacerlo cuadrado */
+  height: auto; /* Alto igual al ancho para hacerlo cuadrado */
+  border-radius: 5px; /* Bordes circulares para hacer el botón redondo */
+  background-color: #BFC4AC;
+}
+
+/* Estilos para los botones regulares */
+.buttons .button {
+  border: none; /* Eliminar bordes */
+  border-radius: 20px; /* Esquinas redondeadas */
+  padding: 6%; /* Ajustar el tamaño */
+  width: calc(50% - 20px); /* Ancho del 50% del contenedor menos el margen */
+  margin: 1%; /* Margen entre los botones */
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho */
+  font-size: 15px; /* Tamaño de fuente */
+  font-family: "Sora", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #696968;
+}
+
+
+
+.extra-buttons {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.extra-buttons .button{
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+#MenuEncabezado {
+  color: white;
+  background-image: url(/Recursos/page/FondoPagina.jpg);
+  background-size: cover;
+}
+
+
+.special-button {
+  background-color: #DAD7CD; /* Cambia el color a rojo */
+  height: 140px;
+}
+
+.special-button:hover {
+  background-color: #DAD7CD;
+}
+
+
