@@ -125,6 +125,7 @@ h1 {
 /*-----------------------------------------------------------------------------Pie de página*/
 #PieDePagina {
     margin-bottom: 5%;
+    width: 100%;
 }
 
 #BtnFormRegis{
@@ -748,4 +749,169 @@ input[type = "submit"]:hover {
   background-color: #DAD7CD;
 }
 
+/*--------------------------------------------------------------------------paginas de parrafos y demas-------------*/
+#Canecas{
+  margin: 20px 0 ;
+}
+#Buscar{
+  border-radius: 25px;
+  display:flex;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 4.5%;
+  margin-bottom: 5%;
+  padding: 1%;
+  
+}
 
+#Buscar ::placeholder {
+  margin-left: 5%;  
+}
+
+.EmpresaBtnInfo {
+  display: flex;
+  display: inline-flex;
+  background-color: #A4B092;
+  border-radius: 25px;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#LogoEmpresas {
+  margin: 5%;
+  border-radius: 25px;
+}
+
+nav {
+  font-size: 14px;
+}
+
+.texto {
+  z-index: 1;
+  margin: 4% 0;
+
+}
+
+
+.background{
+  position: fixed;
+  opacity: 0.6;
+  z-index: 0;
+  top: 12%;
+  left: 12%;
+}
+
+.texto2{
+  width: 100%;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+  margin: 4% 0;
+}
+
+#MenuAyuda{
+  background-color: #A4B092;
+  border-radius: 25px;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  min-height: 720px;
+}
+
+#MenuAyuda h3{
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+
+#MenuAyuda button{
+  width: 100%;
+  padding: 2%;
+  text-align: start;
+  border: none;
+  background: inherit;
+}
+
+#Engrane{
+  margin-right: 2%;
+  animation: engranaje 2s;
+  color: chartreuse;
+}
+
+#Config {
+  flex-direction: column;
+  display: flex;
+  background-color: inherit;
+  border-radius: 25px;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  min-height: 720px;
+}
+
+#Config h3{
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+
+#Config button {
+  width: 100%;
+  padding: 2%;
+  text-align: start;
+  border: none;
+  background: inherit;
+}
+
+#Config input {
+  border: none;
+  width: 60%;
+  text-align: end;
+  background-color: inherit;
+  padding: 2% 0;
+}
+
+
+.ExitBtn{
+  width: 100%;
+  padding: 2%;
+  text-align: start;
+  border: none;
+  background: inherit;
+  margin-left: 5%;
+}
+
+.ExitBtn h4{
+  color: red;
+}
+
+.PerfilCliente{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0% 5% 0;
+  border-radius: 0 0 25px 25px;
+  background-color: #A4B092;
+}
+
+#BoxIcon{
+  color: chartreuse;  
+}
+
+.Envios{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Envios button {
+  width: 100%;
+  padding: 2%;
+  margin: 5% 2%;
+  border-radius: 25px;
+  background-color: #A4B092;
+}
