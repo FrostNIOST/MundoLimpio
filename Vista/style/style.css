@@ -1,171 +1,163 @@
 /* ---------------------------------------------------------------------------Estilos generales */
 * {
-    margin: 0%;
-    padding: 0%;
+  margin: 0%;
+  padding: 0%;
 }
 
 a {
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
+  color: grey;
 }
 
 .patua-one-regular {
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-.Container {
-    font-family: "Patua One", serif;
-    background-color: #EEECE8;
-    width: 430px;
-    min-width: 430px;
-    max-width: 430px;
-    margin: 0%;
-    padding: 0%;
-    /*min-height: 920px;*/
-    color: #283E30;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    }
+.container {
+  font-family: "Patua One", serif;
+  background-color: #eeece8;
+  width: 430px;
+  min-width: 430px;
+  max-width: 430px;
+  margin: 0%;
+  padding: 0%;
+  /*min-height: 920px;*/
+  color: #283e30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 h4 {
-    color: grey;
-    /*margin-left: 10%;*/
-    font-size: 114%;
-
-} 
+  color: grey;
+  /*margin-left: 10%;*/
+  font-size: 114%;
+}
 
 h3 {
-    font-size: 120%;
-    color: grey;
-    /*margin-left: 32%;*/
+  font-size: 120%;
+  color: grey;
+  /*margin-left: 32%;*/
 }
 
 h2 {
-    font-size: 123%;
-    /*margin-left: 10%;*/
+  font-size: 123%;
+  /*margin-left: 10%;*/
 }
 
 h1 {
-    font-size: 147%;
-    /*margin-left: 3%;*/
+  font-size: 147%;
+  /*margin-left: 3%;*/
 }
 
 /*----------------------------------------------------------------------------------Estilo de la pantalla general*/
-.TituloPrincipal{
-    display: flex;
-    display: inline-flex;
-    background-image: url(/Recursos/page/FondoPagina.jpg);
-    background-size: cover;
-    margin: 0;
-    width:  100%;
-    border-radius: 0 0 25px 25px;  
-    padding: 1%;  
+.tituloPrincipal {
+  display: flex;
+  display: inline-flex;
+  background-image: url(/Recursos/page/FondoPagina.jpg);
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+  padding: 1%;
 }
 
-#text{
-    color: #FFFFFF;
-    z-index: 2;
-    margin-top: 5%;
-    justify-content: center;
+#text {
+  color: #ffffff;
+  z-index: 2;
+  margin-top: 5%;
+  justify-content: center;
 }
 
-#FlechaAtras {
-    background: none;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
+#flechaAtras {
+  background: none;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
 }
-    /*-----------------------------------------------------------------------------Encabezado pagina principal*/
-    
-#Encabezado {
-    padding: 0%;
-    margin: 0;
-    width: 100%;
+/*-----------------------------------------------------------------------------Encabezado pagina principal*/
+
+#encabezado {
+  padding: 0%;
+  margin: 0;
+  width: 100%;
 }
 
-    #Logo {
-        display: flex;
-        justify-content: center;
-        width: 50% auto;
-        text-align: center;
-        margin-left: 27%;
-        margin-top: 20%;
-        align-self: center;
-        margin-bottom: 10%;
-    
-    }
-
+#logo {
+  display: flex;
+  justify-content: center;
+  width: 50% auto;
+  text-align: center;
+  margin-left: 27%;
+  margin-top: 20%;
+  align-self: center;
+  margin-bottom: 10%;
+}
 
 /*  ---------------------------------------------------------------------------contenido*/
-#Contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+#contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-#BtnInicio {
-    border-radius: 25px;
-    background-color: #283E30;
-    padding: 7%;
-    font-size: 120%;
-    margin: 5% 25%;
+#btnInicio {
+  border-radius: 25px;
+  background-color: #283e30;
+  padding: 7%;
+  font-size: 120%;
+  margin: 5% 25%;
 }
 
 /*-----------------------------------------------------------------------------Pie de página*/
-#PieDePagina {
-    margin-bottom: 5%;
-    width: 100%;
+#pieDePagina {
+  margin-bottom: 5%;
+  width: 100%;
 }
 
-#BtnFormRegis{
-    margin-left: 77px;
+#btnFormRegis {
+  margin-left: 77px;
 }
 
-#ManoPlaneta {
-    display: flex;
-    position: relative;
-    top: -5px;
+#manoPlaneta {
+  display: flex;
+  position: relative;
+  top: -5px;
 }
 
 /*--------------------------------------------------------------------pantalla de inicio y pantallas de registro---*/
 /*-------------------------------------------------------------------------------encabezado--------------------*/
 .titulo {
-    width: 100%;
-    text-align: center; /* Alinea el texto al centro */
-    font-size: 35px;
-    margin: auto;
-    margin-top: 13%;
-    margin-bottom: 13%;
-
+  width: 100%;
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 35px;
+  margin: auto;
+  margin-top: 13%;
+  margin-bottom: 13%;
 }
 
 /*---------------------------------------------------------------------------------Contenido-----------------*/
 /* Estilos para el formulario */
 
 .formulario {
-    margin: 6%;
-    top: auto;
-    background-color: #D1D5C3;
-    border-radius: 50px;
-    height: max-content;
-    
+  margin: 6%;
+  top: auto;
+  background-color: #d1d5c3;
+  border-radius: 50px;
+  height: max-content;
 }
 
 .formulario form {
-    padding: 40px;
-    box-sizing: border-box;
-
+  padding: 40px;
+  box-sizing: border-box;
 }
 .username,
 .email,
@@ -174,11 +166,10 @@ h1 {
 .password,
 .NumNIT,
 .confirm-password {
-    position: relative;
-    border-bottom: 2px solid #A4B092;
-    margin: 30px 0;
-    width: auto;
-
+  position: relative;
+  border-bottom: 2px solid #a4b092;
+  margin: 30px 0;
+  width: auto;
 }
 
 /*.formulario {
@@ -190,10 +181,10 @@ h1 {
 }*/
 
 .formulario .contraseña {
-    position: relative;
-    border-bottom: 2px solid #A4B092;
-    margin: 30px 0;
-    width: auto;
+  position: relative;
+  border-bottom: 2px solid #a4b092;
+  margin: 30px 0;
+  width: auto;
 }
 
 .username input,
@@ -203,15 +194,15 @@ h1 {
 .password input,
 .NumNIT input,
 .confirm-password input {
-    width: 100px;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 21px;
-    box-sizing: 70px;
-    border-color: #A4B092;
-    background: none;
-    outline: none;
-    border: none;
+  width: 100px;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 21px;
+  box-sizing: 70px;
+  border-color: #a4b092;
+  background: none;
+  outline: none;
+  border: none;
 }
 
 .username label,
@@ -219,30 +210,30 @@ h1 {
 .phone label,
 .birthdate label,
 .password label,
-.NumNIT  label,
+.NumNIT label,
 .confirm-password label {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    color: #B6C0A8;
-    transform: translateY(-50%);
-    font-size: 21px;
-    pointer-events: none;
-    transition: .5s;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #b6c0a8;
+  transform: translateY(-50%);
+  font-size: 21px;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
 /*.formulario input[type="text"],
 .formulario input[type="password"] {
     width: 100%; /* Ocupar todo el ancho del contenedor width: calc(100% - 12px) */
- /*   padding: 5px; /* Espaciado interno del campo */
-  /*  border: none; /* Eliminar borde del campo */
-  /*  border-radius: 5px; /* Borde redondeado */
-  /*  text-align: left; /* Posiciona el texto al principio del campo */
+/*   padding: 5px; /* Espaciado interno del campo */
+/*  border: none; /* Eliminar borde del campo */
+/*  border-radius: 5px; /* Borde redondeado */
+/*  text-align: left; /* Posiciona el texto al principio del campo */
 /*}*/
 
 #FormLogin {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /*.contraseña input:focus ~ label,
@@ -256,7 +247,6 @@ h1 {
     width: 100px;
 }*/
 
-
 .username input,
 .email input,
 .phone input,
@@ -264,15 +254,15 @@ h1 {
 .password input,
 .NumNIT input,
 .confirm-password input {
-    width: 100px;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 21px;
-    box-sizing: 70px;
-    border-color: #A4B092;
-    background: none;
-    outline: none;
-    border: none;
+  width: 100px;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 21px;
+  box-sizing: 70px;
+  border-color: #a4b092;
+  background: none;
+  outline: none;
+  border: none;
 }
 
 .username label,
@@ -282,14 +272,14 @@ h1 {
 .password label,
 .NumNIT label,
 .confirm-password label {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    color: #B6C0A8;
-    transform: translateY(-50%);
-    font-size: 21px;
-    pointer-events: none;
-    transition: .5s;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #b6c0a8;
+  transform: translateY(-50%);
+  font-size: 21px;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
 .username span::before,
@@ -299,14 +289,14 @@ h1 {
 .password span::before,
 .NumNIT span::before,
 .confirm-password span::before {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #283E30;
-    transition: .5s;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #283e30;
+  transition: 0.5s;
 }
 
 .username input:focus ~ label,
@@ -316,8 +306,8 @@ h1 {
 .password input:focus ~ label,
 .NumNIT input:focus ~ label,
 .confirm-password input:focus ~ label {
-    top: -5px;
-    color: #283E30;
+  top: -5px;
+  color: #283e30;
 }
 
 .username input:focus ~ span:before,
@@ -326,362 +316,355 @@ h1 {
 .birthdate input:focus ~ span:before,
 .password input:focus ~ span:before,
 .confirm-password input:focus ~ span:before {
-    width: 100px;
+  width: 100px;
 }
 
 .recordar {
-    justify-content: flex-end;
-    margin-left: 47%;
+  justify-content: flex-end;
+  margin-left: 47%;
 }
 
-
-/*----------------------------------------------------boton ingresar boton crear*/ 
-input[type = "submit"]{   
-    width: 163px;
-    height: 54px;
-    border: 0 solid;
-    background: #283E30;
-    border-radius: 22px;
-    font-size: 18px;
-    color: #FFFFFF;
-    cursor: pointer;
-    outline: none;
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style:normal;
-    margin-left: 25%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-
+/*----------------------------------------------------boton ingresar boton crear*/
+input[type="submit"] {
+  width: 163px;
+  height: 54px;
+  border: 0 solid;
+  background: #283e30;
+  border-radius: 22px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-
-input[type = "submit"]:hover {
-    border-color: #283E30;
-    transition: .5s;
-
+input[type="submit"]:hover {
+  border-color: #283e30;
+  transition: 0.5s;
 }
 
-.registrarse a:hover{
-    text-decoration: underline;
+.registrarse a:hover {
+  text-decoration: underline;
 }
 
 #IniciarSesion {
-    color: #283E30;
+  color: #283e30;
 }
 
 /*----------------------------------------------------------------Mapa------------*/
-#Mapa {
-    display: flex;
-    position: absolute;
-    top: -10px;
+#mapa {
+  display: flex;
+  position: absolute;
+  top: -10px;
 }
 
 /*------------------------------------------------------------------Pie de pagina*/
-.PieDePagina{
-    margin-bottom: 5%;
+.pieDePagina {
+  margin-bottom: 5%;
 }
-
 
 /*-----------------------------------------------------------------------Calendario*/
 
 .calendar {
-    height: 30rem;
-    width: 100%;
-    border-radius: 25px;
-    overflow: hidden;
-    padding: 5% 7%;
-    margin-top: 7%;
+  height: 30rem;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 5% 7%;
+  margin-top: 7%;
+}
+
+.calendar-header {
+  background: #5e695f;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  align-items: center;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.calendar-week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(104, 104, 104);
+}
+
+.calendar-week-days div:hover {
+  color: black;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.calendar-week-days div {
+  display: grid;
+  place-items: center;
+  color: #0a0921;
+  height: 30px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  color: #0a0921;
+}
+
+.calendar-days div {
+  width: 37px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  animation: to-top 1s forwards;
+}
+
+.month-picker {
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.year-picker {
+  display: flex;
+  align-items: center;
+}
+
+.year-change {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.year-change:hover {
+  background-color: #253925;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.12);
+}
+
+.calendar-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#year:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2 ease-in-out;
+}
+
+.calendar-days div span {
+  position: absolute;
+}
+
+.calendar-days div:hover {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-color: #a4baa4;
+  border-radius: 20%;
+}
+
+.calendar-days div.current-date {
+  color: #f8fbff;
+  background-color: #253925;
+  border-radius: 20%;
+}
+
+.month-list {
+  position: relative;
+  left: 0;
+  top: -130px;
+  background-color: #ebebeb;
+  color: #151426;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1px;
+  border-radius: 10px;
+}
+
+.month-list > div {
+  display: grid;
+  place-content: center;
+  margin: 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.month-list > div > div {
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.month-list > div > div:hover {
+  background-color: #a4baa4;
+  color: #f8fbff;
+  transform: scale(0.9);
+  transition: all 0.2s ease-in-out;
+}
+
+.month-list.show {
+  visibility: visible;
+  pointer-events: visible;
+  transition: 0.6s ease-in-out;
+  animation: to-left 0.71s forwards;
+}
+
+.month-list.hideonce {
+  visibility: hidden;
+}
+
+.month-list.hide {
+  animation: to-right 1s forwards;
+  visibility: none;
+  pointer-events: none;
+}
+
+.date-time-formate {
+  height: 4rem;
+  width: 100%;
+  font-family: Dubai Light, Century Gothic;
+  position: relative;
+  display: flex;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-text-formate {
+  font-family: Microsoft JhengHei UI;
+  font-size: 1.4rem;
+  padding-right: 5%;
+  border-right: 3px solid #555557;
+}
+
+.date-time-value {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-left: 5%;
+}
+
+.time-formate {
+  font-size: 1.5rem;
+}
+
+.time-formate.hideTime {
+  animation: hidetime 1.5s forwards;
+}
+
+.day-text-formate.hidetime {
+  animation: hidetime 1.5s forwards;
+}
+
+.date-formate.hideTime {
+  animation: hidetime 1.5s forwards;
+}
+
+.day-text-formate.showtime {
+  animation: showtime 1s forwards;
+}
+
+.time-formate.showtime {
+  animation: showtime 1s forwards;
+}
+
+.date-formate.showtime {
+  animation: showtime 1s forwards;
+}
+
+@keyframes to-top {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
   }
-  
-  .calendar-header {
-    background: #5e695f;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 7px;
-    align-items: center;
-    font-weight: 700;
-    color: #ffffff;
-    padding: 10px;
+
+  100% {
+    transform: translateY(100%);
+    opacity: 1;
   }
-  
-  .calendar-body {
-    padding: 10px;
+}
+
+@keyframes to-left {
+  0% {
+    transform: translatex(230%);
+    opacity: 1;
   }
-  
-  .calendar-week-days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    font-weight: 600;
-    cursor: pointer;
-    color: rgb(104, 104, 104);
+
+  100% {
+    transform: translatex(0);
+    opacity: 1;
   }
-  
-  .calendar-week-days div:hover {
-    color: black;
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
+}
+
+@keyframes to-right {
+  10% {
+    transform: translatex(0);
+    opacity: 1;
   }
-  
-  .calendar-week-days div {
-    display: grid;
-    place-items: center;
-    color: #0A0921;
-    height: 30px;
+
+  100% {
+    transform: translatex(-150%);
+    opacity: 1;
   }
-  
-  .calendar-days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
-    color: #0A0921;
+}
+
+@keyframes showtime {
+  0% {
+    transform: translatex(250%);
+    opacity: 1;
   }
-  
-  .calendar-days div {
-    width: 37px;
-    height: 33px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    position: relative;
-    cursor: pointer;
-    animation: to-top 1s forwards;
+
+  100% {
+    transform: translatex(0%);
+    opacity: 1;
   }
-  
-  .month-picker {
-    padding: 6px 10px;
-    border-radius: 10px;
-    cursor: pointer;
+}
+
+@keyframes hidetime {
+  0% {
+    transform: translatex(0%);
+    opacity: 1;
   }
-  
-  .year-picker {
-    display: flex;
-    align-items: center;
+
+  100% {
+    transform: translatex(-370%);
+    opacity: 1;
   }
-  
-  .year-change {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    margin: 0px 10px;
-    cursor: pointer;
-  }
-  
-  .year-change:hover {
-    background-color: #253925;
-    transition: all .2s ease-in-out;
-    transform: scale(1.12);
-  }
-  
-  .calendar-footer {
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  #year:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all 0.2 ease-in-out;
-  }
-  
-  .calendar-days div span {
-    position: absolute;
-  }
-  
-  .calendar-days div:hover {
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-    background-color: #a4baa4;
-    border-radius: 20%;
-  }
-  
-  .calendar-days div.current-date {
-    color: #f8fbff;
-    background-color: #253925;
-    border-radius: 20%;
-  }
-  
-  .month-list {
-    position: relative;
-    left: 0;
-    top: -130px;
-    background-color: #ebebeb;
-    color: #151426;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 1px;
-    border-radius: 10px;
-  }
-  
-  .month-list>div {
-    display: grid;
-    place-content: center;
-    margin: 5px 10px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .month-list>div>div {
-    border-radius: 15px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .month-list>div>div:hover {
-    background-color: #a4baa4;
-    color: #f8fbff;
-    transform: scale(0.9);
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .month-list.show {
-    visibility: visible;
-    pointer-events: visible;
-    transition: 0.6s ease-in-out;
-    animation: to-left .71s forwards;
-  }
-  
-  .month-list.hideonce {
-    visibility: hidden;
-  }
-  
-  .month-list.hide {
-    animation: to-right 1s forwards;
-    visibility: none;
-    pointer-events: none;
-  }
-  
-  .date-time-formate {
-    height: 4rem;
-    width: 100%;
-    font-family: Dubai Light, Century Gothic;
-    position: relative;
-    display: flex;
-    top: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .day-text-formate {
-    font-family: Microsoft JhengHei UI;
-    font-size: 1.4rem;
-    padding-right: 5%;
-    border-right: 3px solid #555557;
-  }
-  
-  .date-time-value {
-    display: block;
-    position: relative;
-    text-align: center;
-    padding-left: 5%;
-  }
-  
-  .time-formate {
-    font-size: 1.5rem;
-  }
-  
-  .time-formate.hideTime {
-    animation: hidetime 1.5s forwards;
-  }
-  
-  .day-text-formate.hidetime {
-    animation: hidetime 1.5s forwards;
-  }
-  
-  .date-formate.hideTime {
-    animation: hidetime 1.5s forwards;
-  }
-  
-  .day-text-formate.showtime {
-    animation: showtime 1s forwards;
-  }
-  
-  .time-formate.showtime {
-    animation: showtime 1s forwards;
-  }
-  
-  .date-formate.showtime {
-    animation: showtime 1s forwards;
-  }
-  
-  @keyframes to-top {
-    0% {
-      transform: translateY(0);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(100%);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes to-left {
-    0% {
-      transform: translatex(230%);
-      opacity: 1;
-    }
-  
-    100% {
-      transform: translatex(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes to-right {
-    10% {
-      transform: translatex(0);
-      opacity: 1;
-    }
-  
-    100% {
-      transform: translatex(-150%);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes showtime {
-    0% {
-      transform: translatex(250%);
-      opacity: 1;
-    }
-  
-    100% {
-      transform: translatex(0%);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes hidetime {
-    0% {
-      transform: translatex(0%);
-      opacity: 1;
-    }
-  
-    100% {
-      transform: translatex(-370%);
-      opacity: 1;
-    }
-  }
+}
 
 /* --------------------------------------------------------------------------menu*/
 
-.MenuDeOpciones {
-    background-color: #EEECE8;
-    border-radius: 50px 50px 0 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-top: 0;
-    flex-direction: row;
-    justify-content: space-around;
+.menuDeOpciones {
+  background-color: #eeece8;
+  border-radius: 50px 50px 0 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 0;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-
 
 .button svg {
   fill: #696968; /* Color del ícono */
@@ -690,15 +673,13 @@ input[type = "submit"]:hover {
   vertical-align: middle; /* Alinear verticalmente el ícono */
   margin-right: 12px; /* Margen a la derecha del ícono para separarlo del texto */
   float: right;
-
 }
 
-
-.MenuDeOpciones .button {
+.menuDeOpciones .button {
   width: 100% auto; /* Ancho igual al alto para hacerlo cuadrado */
   height: auto; /* Alto igual al ancho para hacerlo cuadrado */
   border-radius: 5px; /* Bordes circulares para hacer el botón redondo */
-  background-color: #BFC4AC;
+  background-color: #bfc4ac;
 }
 
 /* Estilos para los botones regulares */
@@ -716,8 +697,6 @@ input[type = "submit"]:hover {
   color: #696968;
 }
 
-
-
 .extra-buttons {
   margin: 3%;
   display: flex;
@@ -726,52 +705,50 @@ input[type = "submit"]:hover {
   flex-direction: row;
 }
 
-.extra-buttons .button{
+.extra-buttons .button {
   background: none;
   color: inherit;
   border: none;
   cursor: pointer;
 }
 
-#MenuEncabezado {
+#menuEncabezado {
   color: white;
   background-image: url(/Recursos/page/FondoPagina.jpg);
   background-size: cover;
 }
 
-
 .special-button {
-  background-color: #DAD7CD; /* Cambia el color a rojo */
+  background-color: #dad7cd; /* Cambia el color a rojo */
   height: 140px;
 }
 
 .special-button:hover {
-  background-color: #DAD7CD;
+  background-color: #dad7cd;
 }
 
 /*--------------------------------------------------------------------------paginas de parrafos y demas-------------*/
-#Canecas{
-  margin: 20px 0 ;
+#canecas {
+  margin: 20px 0;
 }
-#Buscar{
+#buscar {
   border-radius: 25px;
-  display:flex;
+  display: flex;
   width: 90%;
   margin-top: 5%;
   margin-left: 4.5%;
   margin-bottom: 5%;
   padding: 1%;
-  
 }
 
-#Buscar ::placeholder {
-  margin-left: 5%;  
+#buscar ::placeholder {
+  margin-left: 5%;
 }
 
-.EmpresaBtnInfo {
+.empresaBtnInfo {
   display: flex;
   display: inline-flex;
-  background-color: #A4B092;
+  background-color: #a4b092;
   border-radius: 25px;
   align-items: center;
   width: 100%;
@@ -780,7 +757,7 @@ input[type = "submit"]:hover {
   margin-top: 2%;
 }
 
-#LogoEmpresas {
+#logoEmpresas {
   margin: 5%;
   border-radius: 25px;
 }
@@ -792,11 +769,9 @@ nav {
 .texto {
   z-index: 1;
   margin: 4% 0;
-
 }
 
-
-.background{
+.background {
   position: fixed;
   opacity: 0.6;
   z-index: 0;
@@ -804,7 +779,7 @@ nav {
   left: 12%;
 }
 
-.texto2{
+.texto2 {
   width: 100%;
   display: flex;
   display: inline-flex;
@@ -813,8 +788,8 @@ nav {
   margin: 4% 0;
 }
 
-#MenuAyuda{
-  background-color: #A4B092;
+#menuAyuda {
+  background-color: #a4b092;
   border-radius: 25px;
   width: 100%;
   padding: 1%;
@@ -823,12 +798,12 @@ nav {
   min-height: 720px;
 }
 
-#MenuAyuda h3{
+#menuAyuda h3 {
   margin-top: 7%;
   margin-bottom: 4%;
 }
 
-#MenuAyuda button{
+#menuAyuda button {
   width: 100%;
   padding: 2%;
   text-align: start;
@@ -836,13 +811,13 @@ nav {
   background: inherit;
 }
 
-#Engrane{
+#engrane {
   margin-right: 2%;
   animation: engranaje 2s;
   color: chartreuse;
 }
 
-#Config {
+#config {
   flex-direction: column;
   display: flex;
   background-color: inherit;
@@ -854,12 +829,12 @@ nav {
   min-height: 720px;
 }
 
-#Config h3{
+#config h3 {
   margin-top: 7%;
   margin-bottom: 4%;
 }
 
-#Config button {
+#config button {
   width: 100%;
   padding: 2%;
   text-align: start;
@@ -867,7 +842,7 @@ nav {
   background: inherit;
 }
 
-#Config input {
+#config input {
   border: none;
   width: 60%;
   text-align: end;
@@ -875,8 +850,7 @@ nav {
   padding: 2% 0;
 }
 
-
-.ExitBtn{
+.exitBtn {
   width: 100%;
   padding: 2%;
   text-align: start;
@@ -885,33 +859,33 @@ nav {
   margin-left: 5%;
 }
 
-.ExitBtn h4{
+.exitBtn h4 {
   color: red;
 }
 
-.PerfilCliente{
+.perfilCliente {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10% 0% 5% 0;
   border-radius: 0 0 25px 25px;
-  background-color: #A4B092;
+  background-color: #a4b092;
 }
 
-#BoxIcon{
-  color: chartreuse;  
+#boxIcon {
+  color: chartreuse;
 }
 
-.Envios{
+.envios {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.Envios button {
+.envios button {
   width: 100%;
   padding: 2%;
   margin: 5% 2%;
   border-radius: 25px;
-  background-color: #A4B092;
+  background-color: #a4b092;
 }
