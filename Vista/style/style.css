@@ -89,6 +89,7 @@ h1 {
 #Encabezado {
     padding: 0%;
     margin: 0;
+    width: 100%;
 }
 
     #Logo {
@@ -124,6 +125,7 @@ h1 {
 /*-----------------------------------------------------------------------------Pie de página*/
 #PieDePagina {
     margin-bottom: 5%;
+    width: 100%;
 }
 
 #BtnFormRegis{
@@ -671,7 +673,6 @@ input[type = "submit"]:hover {
     background-color: #EEECE8;
     border-radius: 50px 50px 0 0;
     width: 100%;
-    min-height: auto;
     padding: 10px;
     box-sizing: border-box;
     overflow: hidden;
@@ -681,33 +682,10 @@ input[type = "submit"]:hover {
 }
 
 
-.BtnsMenuSuperior {
-  display: flex;
-  background-color: transparent;
-  border-color: transparent;
-  color: #FFFFFF;
-  transition: background-color 0.3s ease;
-  background-image: url(/Recursos/page/FondoPagina.jpg);
-  background-size: cover;
-  flex-direction: column;
-}
-
-#TituloMenu{
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 12px;
-  margin-left: 0px;
-  font-size: 20px;
-  margin-top: 22px;
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
 
 .button svg {
   fill: #696968; /* Color del ícono */
-  width: 80px; /* Aumenta el tamaño del ícono */
+  width: 80%; /* Aumenta el tamaño del ícono */
   height: 70px; /* Aumenta el tamaño del ícono */
   vertical-align: middle; /* Alinear verticalmente el ícono */
   margin-right: 12px; /* Margen a la derecha del ícono para separarlo del texto */
@@ -715,26 +693,9 @@ input[type = "submit"]:hover {
 
 }
 
-/*#extra-buttons {
-  position: absolute; /* Posición absoluta dentro del contenedor */
-  /*top: 10px; /* Ajusta la posición desde la parte superior */
-  /*left: 50%; /* Ajusta la posición desde el centro */
-  /*transform: translateX(-50%); /* Centra horizontalmente los botones */
-  /*right: 10px;
-}*/
-
-/*.extra-button {
-  margin: 0 -165px;
-  padding: 0 0;
-  background-color: transparent;
-  border-color: transparent;
-  cursor: pointer;
-  color: #FFFFFF;
-  transition: background-color 0.3s ease;
-}*/
 
 .MenuDeOpciones .button {
-  width: auto; /* Ancho igual al alto para hacerlo cuadrado */
+  width: 100% auto; /* Ancho igual al alto para hacerlo cuadrado */
   height: auto; /* Alto igual al ancho para hacerlo cuadrado */
   border-radius: 5px; /* Bordes circulares para hacer el botón redondo */
   background-color: #BFC4AC;
@@ -744,9 +705,9 @@ input[type = "submit"]:hover {
 .buttons .button {
   border: none; /* Eliminar bordes */
   border-radius: 20px; /* Esquinas redondeadas */
-  padding: 25px 18px; /* Ajustar el tamaño */
+  padding: 6%; /* Ajustar el tamaño */
   width: calc(50% - 20px); /* Ancho del 50% del contenedor menos el margen */
-  margin: 7px; /* Margen entre los botones */
+  margin: 1%; /* Margen entre los botones */
   box-sizing: border-box; /* Incluir el padding y el borde en el ancho */
   font-size: 15px; /* Tamaño de fuente */
   font-family: "Sora", sans-serif;
@@ -755,3 +716,201 @@ input[type = "submit"]:hover {
   color: #696968;
 }
 
+
+
+.extra-buttons {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.extra-buttons .button{
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+#MenuEncabezado {
+  color: white;
+  background-image: url(/Recursos/page/FondoPagina.jpg);
+  background-size: cover;
+}
+
+
+.special-button {
+  background-color: #DAD7CD; /* Cambia el color a rojo */
+  height: 140px;
+}
+
+.special-button:hover {
+  background-color: #DAD7CD;
+}
+
+/*--------------------------------------------------------------------------paginas de parrafos y demas-------------*/
+#Canecas{
+  margin: 20px 0 ;
+}
+#Buscar{
+  border-radius: 25px;
+  display:flex;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 4.5%;
+  margin-bottom: 5%;
+  padding: 1%;
+  
+}
+
+#Buscar ::placeholder {
+  margin-left: 5%;  
+}
+
+.EmpresaBtnInfo {
+  display: flex;
+  display: inline-flex;
+  background-color: #A4B092;
+  border-radius: 25px;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#LogoEmpresas {
+  margin: 5%;
+  border-radius: 25px;
+}
+
+nav {
+  font-size: 14px;
+}
+
+.texto {
+  z-index: 1;
+  margin: 4% 0;
+
+}
+
+
+.background{
+  position: fixed;
+  opacity: 0.6;
+  z-index: 0;
+  top: 12%;
+  left: 12%;
+}
+
+.texto2{
+  width: 100%;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+  margin: 4% 0;
+}
+
+#MenuAyuda{
+  background-color: #A4B092;
+  border-radius: 25px;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  min-height: 720px;
+}
+
+#MenuAyuda h3{
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+
+#MenuAyuda button{
+  width: 100%;
+  padding: 2%;
+  text-align: start;
+  border: none;
+  background: inherit;
+}
+
+#Engrane{
+  margin-right: 2%;
+  animation: engranaje 2s;
+  color: chartreuse;
+}
+
+#Config {
+  flex-direction: column;
+  display: flex;
+  background-color: inherit;
+  border-radius: 25px;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  min-height: 720px;
+}
+
+#Config h3{
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+
+#Config button {
+  width: 100%;
+  padding: 2%;
+  text-align: start;
+  border: none;
+  background: inherit;
+}
+
+#Config input {
+  border: none;
+  width: 60%;
+  text-align: end;
+  background-color: inherit;
+  padding: 2% 0;
+}
+
+
+.ExitBtn{
+  width: 100%;
+  padding: 2%;
+  text-align: start;
+  border: none;
+  background: inherit;
+  margin-left: 5%;
+}
+
+.ExitBtn h4{
+  color: red;
+}
+
+.PerfilCliente{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0% 5% 0;
+  border-radius: 0 0 25px 25px;
+  background-color: #A4B092;
+}
+
+#BoxIcon{
+  color: chartreuse;  
+}
+
+.Envios{
+  display: flex;
+  justify-content: space-around;
+}
+
+.Envios button {
+  width: 100%;
+  padding: 2%;
+  margin: 5% 2%;
+  border-radius: 25px;
+  background-color: #A4B092;
+}
