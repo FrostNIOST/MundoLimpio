@@ -15,34 +15,15 @@
     <script src="/Controlador/calendario.js" defer></script>
 </head>
 <body>
-    <div class="Container">
-        <div class="row" id="Encabezado">
-            <div class="TituloPrincipal">
-                <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
-                </svg></button></div>
-                <div class="col-11"><h1 id="text" class="d-flex justify-content-center 100%"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16" id="BoxIcon">
-                    <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6z"/>
-                  </svg>Mis envios</h1></div>
-            </div>        
-        </div>
-        <div class="row" id="Contenido">
-            <div class="col-12">
-                <div class="Envios">
-                    <button>Historial</button><button>Solicitar envio</button>
-                    <br><button>Historial</button><button>Solicitar envio</button>
-                    <br><button>Historial</button><button>Solicitar envio</button>
+    <div class="Container"> <!----perfilUsuario-->
 
-                </div>
-            </div>
-        </div>
        
     </div> <!--div/ container-->
     <!----------------------------------templates------------------------------------------>
 
 
 
-    <template id="PaginaInicio">
+    <template id="paginaInicio">
         <!---------------------------------------------------------------------------------------------encabezado-->
         <div class="row">
             <div class="col-12" id="Encabezado">
@@ -62,18 +43,18 @@
         <div class="row">
             <div class="col-12" id="PieDePagina">
                 <img src="/Recursos/page/nueva mano gradiente.png" alt="ManoConPlaneta" id="ManoPlaneta" width="100%">
-                <a href="/register" id="BtnFormRegis">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                <button id="BtnFormRegis">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                     <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                     <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
-                    </svg></a> | <a href="#" id="BtnFormRegisEmpresa">Registra tu empresa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                    </svg></button> | <button id="BtnFormRegisEmpresa">Registra tu empresa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                     <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
-                    </svg></a>
+                    </svg></button>
             </div>
         </div>
     </template>
 
 
-    <template id="LogIn">
+    <template id="login">
     <!----------------------------------------------------------------------------------------------------encabezado-->
     <div class="row" class="Encabezado"> <!--Area donde se ubica el logo----------------------------------------------------------->
         <div class="col-12">
@@ -85,7 +66,7 @@
         <div class="col-12">
             <div class="Contenido">
                 <div class="formulario">
-                    <form method="post" action="/login" id="FormLogin">
+                    <form method="post" id="FormLogin">
                         <div class="username">
                             <input type="text" name="correo" name="NumeroContacto" required>
                             <label> Correo o celular</label>
@@ -94,8 +75,8 @@
                             <input type="password" name="contraseña" required>
                             <label>Contraseña</label>
                         </div>
-                        <div class="recordar" >Recuperar contraseña</div>
-                        <input type="submit" value="Ingresar">                               
+                        <button class="recordar" >Recuperar contraseña</button>                            
+                        <button class="BtnCrear" id="BtnIngresar">Ingresar</button>                              
                     </form>
                 </div>
             </div>                
@@ -104,19 +85,19 @@
     <div class="row">
         <div class="col-12">
             <div class="PieDePagina">
-                <a href="/register" id="BtnFormRegis">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                <button id="BtnFormRegis">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                     <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                     <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
-                    </svg></a> | <a href="#" id="bttnRegisEmpresa">Registra tu empresa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                    </svg></button> | <button id="bttnRegisEmpresa">Registra tu empresa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                     <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
-                    </svg></a>
+                    </svg></button>
             </div>  
         </div>
     </div>
     </template>
 
 
-    <template id="FormularioEmpresa">
+    <template id="formularioEmpresa">
         <div class="row">
             <div class="col-12" id="Encabezado">
                 <h1 class="titulo">Registro<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
@@ -127,7 +108,7 @@
         <div class="row">
             <div class="col-12" id="Contenido">
                 <div class="formulario">
-                    <form method="post" action="/register">
+                    <form method="post">
                         <div class="username">
                             <input type="text" name="nombre_empresa" id="NombreUsuario" required>
                             <label> Nombre de la empresa </label>
@@ -156,8 +137,8 @@
                             <input type="password" name="confirm-password" required>
                             <label> Confirmar contraseña </label>
                         </div>
-                        <input type="submit" value="Crear" id="BtnCrear">
-                        <h4 class="d-flex justify-content-center 100%">Ya tienes cuenta <a href="#" id="IniciarSesion">Inicia  sesión</a>.</h4>
+                        <button class="BtnCrear">Crear</button>
+                        <h4 class="d-flex justify-content-center 100%">Ya tienes cuenta <button class="BtnIniciarSesion">Inicia  sesión</button>.</h4>
                     </form>
                 </div>
                 
@@ -166,7 +147,7 @@
     </template>
 
     
-    <template id="FormRegisUsuario">
+    <template id="formRegisUsuario">
         <div class="row">
             <div class="col-12" id="Encabezado">
                 <h1 class="titulo">Registro<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -177,7 +158,7 @@
         <div class="row">
             <div class="col-12" id="Contenido">
                 <div class="formulario">
-                    <form method="post" action="/register">
+                    <form method="post">
                         <div class="username">
                             <input type="text" name="nombre" id="NombreUsuario" required>
                             <label> Nombre </label>
@@ -202,8 +183,8 @@
                             <input type="password" name="confirm-password" required>
                             <label> Confirmar contraseña </label>
                         </div>
-                        <input type="submit" value="Crear" id="BtnCrear">
-                        <h4 class="d-flex justify-content-center 100%">Ya tienes cuenta <a href="#" id="IniciarSesion">Inicia  sesión</a>.</h4>
+                        <button class="BtnCrear">Crear</button>
+                        <h4 class="d-flex justify-content-center 100%">Ya tienes cuenta <button class="BtnIniciarSesion">Inicia  sesión</button>.</h4>
                     </form>
                 </div>
                 
@@ -212,7 +193,7 @@
     </template>
 
 
-    <template id="MapaLimpio">
+    <template id="mapaLimpio">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -228,7 +209,7 @@
     </template>
 
 
-    <template id="Calendario">
+    <template id="calendario">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras" onclick="retrocederPagina()"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -279,7 +260,7 @@
     </template>
 
 
-    <template id="MenuDeUsuario">
+    <!---faltamodificar estilos--><template id="menuDeUsuario">
         <div class="row" id="Encabezado">
             <div class="col-12">
                 <div id="MenuEncabezado">
@@ -326,7 +307,7 @@
     </template>
 
 
-    <template id="AprendeReciclar">
+    <template id="aprendeReciclar">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -377,7 +358,7 @@
     </template>
 
 
-    <template id="ListaEmpresa">
+    <template id="listaEmpresa">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -514,7 +495,7 @@
     </template>
 
 
-    <template id="Privacidad">
+    <template id="privacidad">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -547,7 +528,7 @@
     </template>
 
 
-    <template id="Funcionamiento">
+    <template id="funcionamiento">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -573,7 +554,7 @@
     </template>
 
 
-    <template id="Diferenciado">
+    <template id="diferenciado">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -605,7 +586,7 @@
     </template>
 
 
-    <template id="PQR">
+    <template id="pqr">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -640,7 +621,7 @@
     </template>
 
 
-    <template id="ReseñasPasos">
+    <template id="reseñasPasos">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -673,7 +654,7 @@
     </template>
 
 
-    <template id="MundoLimpio">
+    <template id="mundoLimpio">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -728,7 +709,7 @@
     </template>
 
 
-    <template id="Preguntas">
+    <template id="preguntas">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -754,7 +735,7 @@
     </template>
 
 
-    <template id="Configuracion">
+    <template id="configuracion">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
@@ -800,6 +781,7 @@
             </div>
         </div>
     </template>
+    
 
     <template id="perfilUsuario">
         <div class="row" id="Encabezado">
@@ -834,6 +816,34 @@
                 </button>
             </div>
         </div>
+    </template>
+
+
+    <!--falta modificar estilos--><template id="solicitarEnvios">
+        <div class="row" id="Encabezado">
+            <div class="TituloPrincipal">
+                <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                </svg></button></div>
+                <div class="col-11"><h1 id="text" class="d-flex justify-content-center 100%"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16" id="BoxIcon">
+                    <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6z"/>
+                  </svg>Mis envios</h1></div>
+            </div>        
+        </div>
+        <div class="row" id="Contenido">
+            <div class="col-12">
+                <div class="Envios">
+                    <button>Historial</button><button>Solicitar envio</button>
+                    <br><button>Historial</button><button>Solicitar envio</button>
+                    <br><button>Historial</button><button>Solicitar envio</button>
+
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!--falta modificar estilos--><template id="historialEnvios">
+
     </template>
 
     
