@@ -1075,6 +1075,75 @@ nav {
   padding: 4%;
   margin: 0 3%;
 }
+/*----------------------------------------------------------menuLateral*/
+
+#menuLateral{
+  position: relative;
+  display: none;
+  top: -130vh;
+  min-height: 100%;
+  width: 55%;
+  z-index: 2;
+  overflow: auto;
+}
+
+#EncabezadoModal {
+  width: 100%;
+  background-color: #D1D5C3;
+}
+
+.FlechaAtrasMenuLateral{
+  display: flex;
+  margin: 5%;
+  background-color: #253925;
+}
+
+#EncabezadoModal img{
+  margin: 1% 25% 10% 25%;
+}
+
+#ContenidoModal{
+  padding: 1% 5%;
+  width: 100%;
+  background-color: #a4baa4;
+  min-height: 90vh;
+}
+#ContenidoModal h3 {
+  color: antiquewhite;
+}
+
+#ContenidoModal svg {
+  color: chartreuse;
+}
+
+#ContenidoModal button {
+  display: flex;
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  align-items: start;
+}
+
+#PieDePaginaModal{
+  padding: 5% 5%;
+  width: 100%;
+  background-color: #A4B092;
+}
+
+#PieDePaginaModal button{
+  display: flex;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+#PieDePaginaModal h3{
+  color: antiquewhite;
+}
+
+#PieDePaginaModal svg {
+  color: chartreuse;
+}
 
 .cerrar:hover,
 .cerrar:focus {
@@ -1082,4 +1151,3 @@ nav {
   text-decoration: none;
   cursor: pointer;
   }
-

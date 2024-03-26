@@ -96,3 +96,18 @@ window.onclick = function (event) {
         modalCambiarNombre.style.display = "none";
     }
 }
+
+/*------------------------------------------------------------------------menuLateralIzquierdo*/
+
+var menuLateral = document.getElementById("menuLateral");
+var btnMenuLateral = document.getElementById("btnMenuLateral");
+
+btnMenuLateral.onclick = function () {
+    menuLateral.style.display = "block";
+}
+
+window.onclick = function (event) {
+    if (event.target == menuLateral) {
+        menuLateral.style.display = "none";
+    }
+}
