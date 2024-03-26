@@ -19,45 +19,7 @@
 </head>
 <body>
     <div class="Container">
-        <div class="row"  id="Encabezado">
-            <!--<div class="col-12">-->
-                <div class="encabezadoMenu">
-                    <div id="encabezadoIconMenu" class="d-flex justify-content-between">
-                        <button id="btnMenuLateral"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                        </svg></button>
-                        <button id="btnNotificationes"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
-                        </svg></button>
-                    </div>
-                    <h1 class="d-flex justify-content-center">Recicla, un pequeño gesto de gran impacto</h1>
-                </div>
-            <!--</div>-->
-        </div>
-        <div class="row"  id="Contenido">
-            <!--<div class="col-12">-->
-                <div class="menuButtons">
-                    <button class="button1" id="btnEmpresa"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
-                        <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
-                      </svg><br>Empresas</button>
-                    <button class="button2" id="btnMapa"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                      </svg><br>Mapa Limpio</button>
-                    <button class="button2" id="btnCalendario"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
-                        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
-                        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                      </svg><br>Calendario</button>
-                    <button class="button1" id="btnAprendeReciclar"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                      </svg><br>Aprende a reciclar</button>
-                    <button class="button2" id="btnEnvios"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16">
-                        <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6z"/>
-                      </svg><br>Envios</button>
 
-                </div>
-            <!--</div>-->
-        </div>
-       
     </div> <!--div/ container-->
     <!----------------------------------templates------------------------------------------>
 
@@ -147,7 +109,7 @@
         </div>
         <div class="row">
             <div class="col-12" id="Contenido">
-                <div class="formulario">
+                <div class="formulario" id="formEmpresa">
                     <form method="post">
                         <div class="username">
                             <input type="text" name="nombre_empresa" id="NombreUsuario" required>
@@ -197,7 +159,7 @@
         </div>
         <div class="row">
             <div class="col-12" id="Contenido">
-                <div class="formulario">
+                <div class="formulario" id="formUsuario">
                     <form method="post">
                         <div class="username">
                             <input type="text" name="nombre" id="NombreUsuario" required>
@@ -822,14 +784,17 @@
         <div class="row" id="Encabezado">
             <div class="col-12">
                 <div class="PerfilCliente">
+                    <button id="FlechaAtras" class="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                    </svg></button>
                     <svg xmlns="http://www.w3.org/2000/svg" width="106" height="106" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                       </svg>
-                      <h2>Nombre del usuario <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                      <h2>Nombre del usuario <button id="btnCambiarNombre"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                      </svg></h2>
+                      </svg></button></h2>
                 </div>
             </div>
         </div>
@@ -837,53 +802,193 @@
             <div class="col-12">
                 <div id="Config">
                     <label for="CorreoElectronico" class="d-flex justify-content-between">Correo electronico<input type="text" placeholder="usuario@email.org" id="CorreoElectronico" ></label>
-                    <label for="CambiarPass" class="d-flex justify-content-between">Contraseña<input type="password" placeholder="********" id="CambiarPass" ></label>
-                    <label for="CambiarTel" class="d-flex justify-content-between">Correo electronico<input type="tel" placeholder="3219876540" id="CambiarTel" ></label>
+                    <label for="CambiarPass" class="d-flex justify-content-between">Contraseña<input type="password" placeholder="********" id="CambiarPass" class="d-flex justify-content-between"><button id="btnCambiarContrasena" class="d-flex justify-content-end"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button></label>
+                    <label for="CambiarTel" class="d-flex justify-content-between">Teléfono<input type="tel" placeholder="3219876540" id="CambiarTel" class="d-flex justify-content-between"><button id="btnCambiarTelefono" class="d-flex justify-content-end"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button></label>
+
                 </div>
             </div>
         </div>
         <div class="row" id="PieDePagina">
             <div class="col-12">
-                <button class="ExitBtn">
+                <button class="ExitBtn" id="ExitBtn">
                     <h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
                         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
                       </svg> Eliminar cuenta</h4>
                 </button>
             </div>
         </div>
+
+        <div id="miModal" class="modal">
+            <div class="contenido-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" color="#283E30" width="60" height="60" fill="currentColor"
+                    class="bi bi-exclamation-octagon-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+                <p>¿Seguro que quiere eliminar su cuenta?</p>
+                <button id="botonCancelar">Cancelar</button>
+                <button id="botonAceptar">Aceptar</button>
+            </div>
+        </div>
+        
+        <div id="modalCambiarContrasena" class="modal">
+            <div class="contenido-modal">    
+                <h2>Cambiar contraseña</h2>
+                <div id="formCambiarContrasena">
+                    <input type="password" class="rectanguloModal3" placeholder="Contraseña actual" required>
+                    <input type="password" class="rectanguloModal3" placeholder="Contraseña nueva" required>
+                    <input type="password" class="rectanguloModal3" placeholder="Repetir contraseña" required>
+                    <button id="botonConfirmar">Confirmar</button>
+                </div>
+            </div>
+        </div>
+
+    <div id="modalCambiarTelefono" class="modal">
+        <div class="contenido-modal">    
+            <h2>Cambiar teléfono</h2>
+            <div id="formCambiartelefono">
+                <input type="tel" class="rectanguloModal3" placeholder="teléfono actual" required>
+                <input type="tel" class="rectanguloModal3" placeholder="Nuevo teléfono" required>
+                <button id="botonConfirmarTelefono">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <div id="modalCambiarNombre" class="modal">
+        <div class="contenido-modal">    
+            <h2>Cambiar Nombre</h2>
+            <div id="formCambiarNombre">
+                <input type="tel" class="rectanguloModal3" placeholder="Ingrese el nuevo nombre" required>
+                <button id="botonConfirmarNombre">Confirmar</button>
+            </div>
+        </div>
+    </div>
     </template>
 
 
-    <!--falta modificar estilos--><template id="solicitarEnvios">
+    <template id="solicitarEnvios">
         <div class="row" id="Encabezado">
             <div class="TituloPrincipal">
                 <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
                 </svg></button></div>
-                <div class="col-11"><h1 id="text" class="d-flex justify-content-center 100%"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16" id="BoxIcon">
+                <div class="col-11"><h1 id="text" class="d-flex justify-content-center 100%"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16" id="CajaIcon">
                     <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6z"/>
                   </svg>Mis envios</h1></div>
             </div>        
         </div>
-        <div class="row" id="Contenido">
-            <div class="col-12">
-                <div class="Envios">
+        <div class="row" >
+            <div class="col-12" id="Contenido">
+                <div class="Envios d-flex justify-content-between">
                     <button>Historial</button><button>Solicitar envio</button>
-                    <br><button>Historial</button><button>Solicitar envio</button>
-                    <br><button>Historial</button><button>Solicitar envio</button>
+                </div>
+                <div class="formulario" id="formSolicitarEnvio">
+                    <form method="post">
+                        <div class="birthdate d-flex">
+                            <input type="date" name="fecha" id="FechaDeNacimiento" required>
+                            <label> Fecha del intercambio</label>
+                        </div>
+                        <div class="username">
+                            <input type="number" name="cantidad" id="cantidadMateria" required>
+                            <label> cantidad (Kg)</label>
+                        </div>
+                        <!--<div class="material">
+                            <input type="text" name="id_materia" id="materiaPrima" required>
+                            <label> Materia prima </label>
+                        </div>-->
+                        <select name="id_materia" id="materiaPrima" required>
+                            <label for="materiaPrima">Materia prima</label>
+                            <option value="botellas">Botellas de plastico</option>
+                            <option value="cartulina">Cartulina</option>
+                            <option value="cartoncorrugado">Cartoncorrugado</option>
+                            <option value="papelCuaderno">Papel de cuaderno</option>
+                        </select>
+                        <!--<div class="phone">
+                            <input type="tel" name="id_categoria" id="NumeroCelular" required>
+                            <label> Categoria </label>
+                        </div>-->
+                        <select name="id_categoria" id="categoriaMateria" required>
+                            <label for="categoriaMateria">categoria</label>
+                            <option value="plastico">Plástico</option>
+                            <option value="carton">Carton</option>
+                            <option value="Papel">Papel</option>
+                        </select>
+
+                        <div class="birthdate">
+                            <input type="text" name="Ubicacion" id="ubicacion" required>
+                            <label> Dirección del envio </label>
+                        </div>
+                        <div class="confirm-password">
+                            <input type="password" name="id_empresa" required>
+                            <label> Empresa a solicitar</label>
+                        </div>
+                        <button class="agregarOtro">Agregar otro +</button>
+                        <button class="btnSolicitar">Solicitar</button>                       
+                    </form>
+                    
+                </div>
 
                 </div>
             </div>
         </div>
     </template>
 
-    <!--falta modificar estilos--><template id="historialEnvios">
+    <template id="historialEnvios">
+        <div class="row" id="Encabezado">
+            <div class="TituloPrincipal">
+                <div class="col-1"><button id="FlechaAtras"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                </svg></button></div>
+                <div class="col-11"><h1 id="text" class="d-flex justify-content-center 100%"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16" id="CajaIcon">
+                    <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6z"/>
+                  </svg>Mis envios</h1></div>
+            </div>        
+        </div>
+        <div class="row" >
+            <div class="col-12" id="Contenido">
+                <div class="Envios d-flex justify-content-between">
+                    <button>Historial</button><button>Solicitar envio</button>
+                </div>
 
+                <h2 class="d-flex justify-content-center" id="detallesTitulo">Detalles</h2>
+            </div>
+            <div class="detallesEnvios">
+                <ul class="detalleEnvioLista">
+                    <li id="envio">Envio: <input type="text" value="1234567890"></li>
+                    <li id="estado">Estado: <input type="text" value="En proceso"></li>
+                    <li id="tipoDeResiduo">Tipo de residuo: <input type="text" value="Papel"></li>
+                    <li id="cantidad">Cantidad: <input type="text" value="35 Kgs"></li>
+                    <li id="Fecha">Fecha: <input type="text" value="15/09/2024"></li>
+                    <li id="empresaRecolectora">Empresa recolectora: <input type="text" value="Recicorp"></li>
+                    <li id="ubicacion">Ubicación <input type="text" value="calle 123, Bogotá"></li>
+                </ul>
+                <hr>
+                <ul class="detalleEnvioLista">
+                    <li id="envio">Envio: <input type="text" value="0987654321"></li>
+                    <li id="estado">Estado: <input type="text" value="Recibido"></li>
+                    <li id="tipoDeResiduo">Tipo de residuo: <input type="text" value="Carton"></li>
+                    <li id="cantidad">Cantidad: <input type="text" value="20 Kgs"></li>
+                    <li id="Fecha">Fecha: <input type="text" value="15/08/2023"></li>
+                    <li id="empresaRecolectora">Empresa recolectora: <input type="text" value="Ciudad Limpia"></li>
+                    <li id="ubicacion">Ubicación: <input type="text" value="calle 1800 bt, Bogotá"></li>
+                </ul>
+    
+    
+            </div>
+        </div>
     </template>
 
     
     <!--------------------------------Controladores ---------------------------------------->
     
-    <script src="controlador.js"></script>
+    <script src="./Controlador/modals.js"></script>
+    <script src="./Vista/vista.js"></script>
+    <script src="./Controlador/controlador.js"></script>
+
 </body>
 </html>

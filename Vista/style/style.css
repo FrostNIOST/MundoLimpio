@@ -21,6 +21,10 @@ a {
   font-style: normal;
 }
 
+hr{
+  width: 100%;
+}
+
 
 
 .Container {
@@ -90,6 +94,14 @@ h1 {
     line-height: normal;
     overflow: visible;
     padding: 0;
+}
+ 
+/*flecha ibicada en perfil*/
+.FlechaAtras {
+  position: relative;
+  top: -20px;
+  left: -170px;
+  display: flex;
 }
     /*-----------------------------------------------------------------------------Encabezado pagina principal*/
     
@@ -872,7 +884,7 @@ nav {
   padding: 1%;
   margin-bottom: 2%;
   margin-top: 5%;
-  min-height: 70vh;
+  min-height: 85vh;
 }
 
 #Config h3{
@@ -896,6 +908,12 @@ nav {
   padding: 2% 0;
 }
 
+#CambiarPass,
+#CambiarTel {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .ExitBtn{
   width: 100%;
@@ -914,19 +932,33 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10% 0% 5% 0;
+  padding: 5% 0% 5% 0;
   border-radius: 0 0 25px 25px;
   background-color: #A4B092;
 }
 
-#BoxIcon{
+.PerfilCliente svg {
+  margin-bottom: 2%;
+}
+
+.PerfilCliente button {
+  background-color: inherit;
+  border: none;
+}
+
+/*-----------------------------------------------Envios*/
+
+#CajaIcon{
   color: chartreuse;  
 }
 
 .Envios{
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  border: none;
+  margin-bottom: 0;
 }
 
 .Envios button {
@@ -935,4 +967,119 @@ nav {
   margin: 5% 2%;
   border-radius: 25px;
   background-color: #A4B092;
+  border: none;
 }
+
+.formulario select{
+  width: 100%;
+  padding: 5%;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  font-family: inherit;
+  color: #A4B092;
+  justify-content: start;
+  justify-self: start;
+}
+
+.btnSolicitar {
+  width: 163px;
+  height: 54px;
+  border: 0 solid;
+  background: #283E30;
+  border-radius: 22px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style:normal;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.agregarOtro {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 3%;
+  width: 90%;
+  background-color: #a4baa4;
+  border-radius: 25px;
+}
+
+#detallesTitulo{
+  font-size: 23px;
+
+}
+
+.detallesEnvios{
+  text-decoration: none;
+  min-height: 90vh;
+  margin: auto;
+}
+
+.detalleEnvioLista{
+  padding: 3.8%;
+}
+
+.detalleEnvioLista input{
+  display: flex;
+  align-items: end;
+
+  border: none;
+}
+
+.detalleEnvioLista li{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+
+
+/*---------------------------------------------------------modeles*/
+.modal {
+  padding: 7%;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: -90vh;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.contenido-modal {
+  background-color: #B6C0A8;
+  text-align: center;
+  border-radius: 55px;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.contenido-modal button {
+  border-radius: 25px;
+  border: none;
+  background-color: #DAD7CD;
+  padding: 4%;
+  margin: 0 3%;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
