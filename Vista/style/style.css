@@ -15,6 +15,17 @@ a {
     font-style: normal;
 }
 
+.the-girl next door-regular {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+hr{
+  width: 100%;
+}
+
+
 
 .Container {
     font-family: "Patua One", serif;
@@ -84,6 +95,14 @@ h1 {
     overflow: visible;
     padding: 0;
 }
+ 
+/*flecha ibicada en perfil*/
+.FlechaAtras {
+  position: relative;
+  top: -20px;
+  left: -170px;
+  display: flex;
+}
     /*-----------------------------------------------------------------------------Encabezado pagina principal*/
     
 #Encabezado {
@@ -130,7 +149,18 @@ h1 {
 
 #BtnFormRegis{
     margin-left: 77px;
+    border: none;
 }
+
+#BtnFormRegisEmpresa {
+  border: none;
+}
+
+#bttnRegisEmpresa{
+  border: none;
+}
+
+
 
 #ManoPlaneta {
     display: flex;
@@ -332,11 +362,14 @@ h1 {
 .recordar {
     justify-content: flex-end;
     margin-left: 47%;
+    margin-bottom: 15%;
+    border: none;
+    background-color: inherit;
 }
 
 
 /*----------------------------------------------------boton ingresar boton crear*/ 
-input[type = "submit"]{   
+/*input[type = "submit"]{   
     width: 163px;
     height: 54px;
     border: 0 solid;
@@ -353,21 +386,41 @@ input[type = "submit"]{
     margin-top: 10%;
     margin-bottom: 10%;
 
+}*/
+
+.BtnCrear {
+  width: 163px;
+  height: 54px;
+  border: 0 solid;
+  background: #283E30;
+  border-radius: 22px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style:normal;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 
-input[type = "submit"]:hover {
+/*input[type = "submit"]:hover {
     border-color: #283E30;
     transition: .5s;
 
-}
+}*/
 
 .registrarse a:hover{
     text-decoration: underline;
 }
 
-#IniciarSesion {
+.BtnIniciarSesion {
     color: #283E30;
+    background-color: inherit;
+    border: none;
 }
 
 /*----------------------------------------------------------------Mapa------------*/
@@ -392,6 +445,7 @@ input[type = "submit"]:hover {
     overflow: hidden;
     padding: 5% 7%;
     margin-top: 7%;
+    min-height: 90vh;
   }
   
   .calendar-header {
@@ -669,85 +723,64 @@ input[type = "submit"]:hover {
 
 /* --------------------------------------------------------------------------menu*/
 
-.MenuDeOpciones {
-    background-color: #EEECE8;
-    border-radius: 50px 50px 0 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-top: 0;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-
-.button svg {
-  fill: #696968; /* Color del ícono */
-  width: 80%; /* Aumenta el tamaño del ícono */
-  height: 70px; /* Aumenta el tamaño del ícono */
-  vertical-align: middle; /* Alinear verticalmente el ícono */
-  margin-right: 12px; /* Margen a la derecha del ícono para separarlo del texto */
-  float: right;
-
-}
-
-
-.MenuDeOpciones .button {
-  width: 100% auto; /* Ancho igual al alto para hacerlo cuadrado */
-  height: auto; /* Alto igual al ancho para hacerlo cuadrado */
-  border-radius: 5px; /* Bordes circulares para hacer el botón redondo */
-  background-color: #BFC4AC;
-}
-
-/* Estilos para los botones regulares */
-.buttons .button {
-  border: none; /* Eliminar bordes */
-  border-radius: 20px; /* Esquinas redondeadas */
-  padding: 6%; /* Ajustar el tamaño */
-  width: calc(50% - 20px); /* Ancho del 50% del contenedor menos el margen */
-  margin: 1%; /* Margen entre los botones */
-  box-sizing: border-box; /* Incluir el padding y el borde en el ancho */
-  font-size: 15px; /* Tamaño de fuente */
-  font-family: "Sora", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  color: #696968;
-}
-
-
-
-.extra-buttons {
-  margin: 3%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.extra-buttons .button{
-  background: none;
-  color: inherit;
-  border: none;
-  cursor: pointer;
-}
-
-#MenuEncabezado {
-  color: white;
+.encabezadoMenu {
   background-image: url(/Recursos/page/FondoPagina.jpg);
   background-size: cover;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 20%;
+  
+}
+
+.encabezadoMenu button{
+  border: none;
+  background-color: inherit;
+  color: white;
+  min-height: 10%;
+  margin: 0% 3%;
+}
+
+.encabezadoMenu h1{
+  font-family: "The Girl Next Door", cursive;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 5%;
+}
+
+.menuButtons {
+  display: flex;
+  position: relative;
+  top: -50px;
+  padding: 6%;
+  background-color: #ebebeb;
+  border-radius: 50px;
+  height: max-content;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 90vh;
+  z-index: 1;
+}
+
+.menuButtons button {
+  margin: 3% 3%;
+  border: none;
+  width: 43%;
+  height: 170px;
+  border-radius: 25px;
+  color: grey;
+}
+
+.button2 {
+  background-color: #B6C0A8;
+}
+
+.button1 {
+  background-color: #D1D5C3;
 }
 
 
-.special-button {
-  background-color: #DAD7CD; /* Cambia el color a rojo */
-  height: 140px;
-}
 
-.special-button:hover {
-  background-color: #DAD7CD;
-}
+
 
 /*--------------------------------------------------------------------------paginas de parrafos y demas-------------*/
 #Canecas{
@@ -792,6 +825,7 @@ nav {
 .texto {
   z-index: 1;
   margin: 4% 0;
+  min-height: 90vh;
 
 }
 
@@ -800,8 +834,8 @@ nav {
   position: fixed;
   opacity: 0.6;
   z-index: 0;
-  top: 12%;
-  left: 12%;
+  top: 20vh;
+  left: 6vh;
 }
 
 .texto2{
@@ -814,13 +848,13 @@ nav {
 }
 
 #MenuAyuda{
-  background-color: #A4B092;
+  background-color: #D1D5C3;
   border-radius: 25px;
   width: 100%;
   padding: 1%;
   margin-bottom: 2%;
   margin-top: 5%;
-  min-height: 720px;
+  min-height: 90vh;
 }
 
 #MenuAyuda h3{
@@ -851,7 +885,7 @@ nav {
   padding: 1%;
   margin-bottom: 2%;
   margin-top: 5%;
-  min-height: 720px;
+  min-height: 85vh;
 }
 
 #Config h3{
@@ -875,6 +909,12 @@ nav {
   padding: 2% 0;
 }
 
+#CambiarPass,
+#CambiarTel {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .ExitBtn{
   width: 100%;
@@ -893,19 +933,33 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10% 0% 5% 0;
+  padding: 5% 0% 5% 0;
   border-radius: 0 0 25px 25px;
   background-color: #A4B092;
 }
 
-#BoxIcon{
+.PerfilCliente svg {
+  margin-bottom: 2%;
+}
+
+.PerfilCliente button {
+  background-color: inherit;
+  border: none;
+}
+
+/*-----------------------------------------------Envios*/
+
+#CajaIcon{
   color: chartreuse;  
 }
 
 .Envios{
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  border: none;
+  margin-bottom: 0;
 }
 
 .Envios button {
@@ -914,4 +968,244 @@ nav {
   margin: 5% 2%;
   border-radius: 25px;
   background-color: #A4B092;
+  border: none;
 }
+
+.formulario select{
+  width: 100%;
+  padding: 5%;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  font-family: inherit;
+  color: #A4B092;
+  justify-content: start;
+  justify-self: start;
+}
+
+.btnSolicitar {
+  width: 163px;
+  height: 54px;
+  border: 0 solid;
+  background: #283E30;
+  border-radius: 22px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style:normal;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.agregarOtro {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 3%;
+  width: 90%;
+  background-color: #a4baa4;
+  border-radius: 25px;
+}
+
+#detallesTitulo{
+  font-size: 23px;
+
+}
+
+.detallesEnvios{
+  text-decoration: none;
+  min-height: 90vh;
+  margin: auto;
+}
+
+.detalleEnvioLista{
+  padding: 3.8%;
+}
+
+.detalleEnvioLista input{
+  display: flex;
+  align-items: end;
+
+  border: none;
+}
+
+.detalleEnvioLista li{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+
+
+/*---------------------------------------------------------modeles*/
+.modal {
+  padding: 7%;
+  display: flex;
+  /*display: none;*/
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  left: 1vh;
+  top: -90vh;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.contenido-modal {
+  background-color: #B6C0A8;
+  text-align: center;
+  border-radius: 55px;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.contenido-modal button {
+  border-radius: 25px;
+  border: none;
+  background-color: #DAD7CD;
+  padding: 4%;
+  margin: 0 3%;
+}
+/*----------------------------------------------------------menuLateralIzquierdo*/
+
+#menuLateral{
+  position: relative;
+  display: none;
+  top: -130vh;
+  min-height: 100%;
+  width: 55%;
+  z-index: 2;
+  overflow: auto;
+}
+
+#EncabezadoModal {
+  width: 100%;
+  background-color: #D1D5C3;
+}
+
+.FlechaAtrasMenuLateral{
+  display: flex;
+  margin: 5%;
+  background-color: #253925;
+}
+
+#EncabezadoModal img{
+  margin: 1% 25% 10% 25%;
+}
+
+#ContenidoModal{
+  padding: 1% 5%;
+  width: 100%;
+  background-color: #a4baa4;
+  min-height: 90vh;
+}
+#ContenidoModal h3 {
+  color: antiquewhite;
+}
+
+#ContenidoModal svg {
+  color: chartreuse;
+}
+
+#ContenidoModal button {
+  display: flex;
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  align-items: start;
+}
+
+#PieDePaginaModal{
+  padding: 5% 5%;
+  width: 100%;
+  background-color: #A4B092;
+}
+
+#PieDePaginaModal button{
+  display: flex;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+#PieDePaginaModal h3{
+  color: antiquewhite;
+}
+
+#PieDePaginaModal svg {
+  color: chartreuse;
+}
+
+/*----------------------------------------------------NotificacionseMenu----*/
+#modalNotificaciones{
+  position: relative;
+  display: none;
+  top: -130vh;
+  left: 48%;
+  min-height: 100%;
+  width: 55%;
+  z-index: 2;
+  overflow: auto;
+  height: 100%;
+}
+
+#modalNotificaciones #EncabezadoModal{
+  min-height: 20vh;
+  align-items: center;
+
+}
+
+#modalNotificaciones #EncabezadoModal button{
+  margin-bottom: 1%;
+  margin-top: 1%;
+
+
+}
+
+#modalNotificaciones #ContenidoModal{
+  min-height: 110vh;
+}
+
+#modalNotificaciones h3{
+  padding: 5%;
+}
+
+#modalNotificaciones #ContenidoModal h4{
+  text-decoration: underline;
+  font-size: 14px;
+  color: antiquewhite;
+}
+
+.btnContenedorNotificacion{
+  display: flex;
+  display: inline-flex;
+}
+
+.textoNotificacion{
+  width: 100%;
+  text-align: start;
+  line-height:  14px;
+  word-spacing: 1px;
+}
+
+.btnNotificacion{
+  background-color: red;
+  border: solid;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }

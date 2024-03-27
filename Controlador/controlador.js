@@ -1,4 +1,40 @@
-//document.getElementById (area1)
-const  Encabezado = document.querySelector("#Encabezado")
-Encabezado.textContent="Este es el texto de prueba"   
-console.log(document)
+let vista = new Vista();
+
+
+function mostrarInicio() {
+    vista.mostrarPlantilla('login', 'Container')
+}
+
+function registrarUsuario() {
+    vista.mostrarPlantilla('formRegisUsuario', 'Container')
+}
+
+function registrarEmpresa() {
+    vista.mostrarPlantilla('formularioEmpresa', 'Container')
+}
+
+function mostrarMenu() {
+    vista.mostrarPlantilla('menuDeUsuario', 'Container')
+}
+
+function mostrarInicioDeSesion() {
+    vista.mostrarPlantilla('login', 'Container')
+}
+
+function mostrarInicio() {
+    vista.mostrarPlantilla('login', 'Container')
+}
+
+function mostrarInicio() {
+    vista.mostrarPlantilla('login', 'Container')
+}
+
+function mostrarInicio() {
+    vista.mostrarPlantilla('login', 'Container')
+}
+
+function mostrarInicio() {
+    vista.mostrarPlantilla('login', 'Container')
+}
+
+
