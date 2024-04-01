@@ -86,7 +86,7 @@ btnCambiarNombre.onclick = function () {
 }
 
 botonConfirmarNombre.onclick = function () {
-    alert("Teléfono cambiado, validando datos sobre la existencia del mismo");
+    alert("Nombre cambiado, validando datos sobre la existencia del mismo");
     modalCambiarNombre.style.display = "none";
 }
 
@@ -101,13 +101,81 @@ window.onclick = function (event) {
 
 var menuLateral = document.getElementById("menuLateral");
 var btnMenuLateral = document.getElementById("btnMenuLateral");
+var FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
 
 btnMenuLateral.onclick = function () {
     menuLateral.style.display = "block";
 }
 
+FlechaAtrasMenuLateral.onclick = function () {
+    menuLateral.style.display = "none";
+}
+
 window.onclick = function (event) {
     if (event.target == menuLateral) {
         menuLateral.style.display = "none";
+    }
+}
+
+/*----------------------------------------------------------------------------manuNotificacionesLateralDerecho*/ 
+var modalNotificaciones = document.getElementById("modalNotificaciones");
+var btnNotificationes = document.getElementById("btnNotificationes");
+var FlechaAtrasMenuLateral = document.querySelectorAll (".FlechaAtrasMenuLateral");
+
+btnNotificationes.onclick = function () {
+    modalNotificaciones.style.display = "block";
+}
+
+FlechaAtrasMenuLateral.onclick = function () {
+    alert("Contraseña cambiada");
+    modalNotificaciones.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modalNotificaciones) {
+        modalNotificaciones.style.display = "none";
+    }
+}
+/*-------------------------------------------------------------modalRecuperarContrasena*/
+
+var modalRecuperarContrasena = document.getElementById("modalRecuperarContrasena");
+var recordar = document.getElementById("recordar");
+var botonConfirmarRecuperar = document.getElementById ("botonConfirmarRecuperar");
+
+recordar.onclick = function () {
+    modalRecuperarContrasena.style.display = "block";
+}
+
+botonConfirmarRecuperar.onclick = function () {
+    alert("Enviand solicitud de recuperacion de contraseña");
+    modalRecuperarContrasena.style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == modalRecuperarContrasena) {
+        modalRecuperarContrasena.style.display = "none";
+    }
+}
+
+
+/*--------------------------------------------------------------modalRecuperarcontraseñaEmpresa*/
+var modalRecuperarContrasenaEmpresa = document.getElementById("modalRecuperarContrasenaEmpresa");
+var btnRecordarContrasena = document.getElementById("btnRecordarContrasena");
+var botonConfirmarNombre = document.getElementById ("botonConfirmarNombre");
+
+btnRecordarContrasena.onclick = function () {
+    modalRecuperarContrasenaEmpresa.style.display = "block";
+}
+
+botonConfirmarNombre.onclick = function () {
+    alert("Teléfono cambiado, validando datos sobre la existencia del mismo");
+    modalRecuperarContrasenaEmpresa.style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == modalRecuperarContrasenaEmpresa) {
+        modalRecuperarContrasenaEmpresa.style.display = "none";
     }
 }
