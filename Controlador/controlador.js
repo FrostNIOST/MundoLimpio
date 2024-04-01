@@ -1,13 +1,17 @@
-let vista = new Vista()
+vista = new Vista()
+
+window.addEventListener('load', function() {
+
+    vista.mostrarPlantilla('paginaInicio', 'Container');
+    
+});
 
 
-window.onload=function(){
-    paginaInicio()
-}
+//window.onload=function(){paginaInicio()}
 
 
-function mostrarInicioUsuario() {
-    vista.mostrarPlantilla('loginUsuario', 'Container')
+function mostrarInicioUsuario(){
+    vista.mostrarPlantilla('loginUsuario', 'Container');
 }
 
 function mostrarInicioEmpresa() {

@@ -1245,9 +1245,3 @@ nav {
   border: solid;
 }
 
-.cerrar:hover,
-.cerrar:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  }
