@@ -27,6 +27,8 @@ hr{
 
 
 
+
+
 .Container {
     font-family: "Patua One", serif;
     background-color: #EEECE8;
@@ -133,12 +135,20 @@ h1 {
     margin: 0;
 }
 
-#BtnInicio {
+#BtnInicioUsuario {
     border-radius: 25px;
     background-color: #283E30;
-    padding: 7%;
+    padding: 4.5%;
     font-size: 120%;
     margin: 5% 25%;
+}
+
+#BtnInicioEmpresa{
+  border-radius: 25px;
+  background-color: #283E30;
+  padding: 3.5%;
+  font-size: 120%;
+  margin: 3% 25%;
 }
 
 /*-----------------------------------------------------------------------------Pie de página*/
@@ -233,7 +243,7 @@ h1 {
 .password input,
 .NumNIT input,
 .confirm-password input {
-    width: 100px;
+    width: 100%;
     padding: 0 5px;
     height: 40px;
     font-size: 21px;
@@ -294,7 +304,7 @@ h1 {
 .password input,
 .NumNIT input,
 .confirm-password input {
-    width: 100px;
+    width: 100%;
     padding: 0 5px;
     height: 40px;
     font-size: 21px;
@@ -359,7 +369,7 @@ h1 {
     width: 100px;
 }
 
-.recordar {
+.btnRecordar {
     justify-content: flex-end;
     margin-left: 47%;
     margin-bottom: 15%;
@@ -389,6 +399,25 @@ h1 {
 }*/
 
 .BtnCrear {
+  width: 163px;
+  height: 54px;
+  border: 0 solid;
+  background: #283E30;
+  border-radius: 22px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style:normal;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+
+#BtningresarEmpresa{
   width: 163px;
   height: 54px;
   border: 0 solid;
@@ -1011,7 +1040,7 @@ nav {
   border-radius: 25px;
 }
 
-#detallesTitulo{
+.detallesTitulo{
   font-size: 23px;
 
 }
@@ -1039,12 +1068,25 @@ nav {
   padding: 0;
 }
 
+/*--------------------------------------------------------Recolecciones*/
+#iconoRecoleciones{
+  color: chartreuse;
+}
+
+.detallesEnvios button{
+  margin: 5% 0 0 66.5%;
+  background-color: #A4B092;
+  padding: 1.5%;
+  border-color: transparent;
+  border-radius: 25px;
+
+}
 
 /*---------------------------------------------------------modeles*/
 .modal {
   padding: 7%;
   display: flex;
-  /*display: none;*/
+  display: none;
   justify-content: center;
   align-items: center;
   position: relative;
