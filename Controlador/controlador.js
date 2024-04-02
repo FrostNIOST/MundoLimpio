@@ -30,6 +30,10 @@ function mostrarMenuUsuario() {
     vista.mostrarPlantilla('menuDeUsuario', 'Container')
 }
 
+function mostrarMenuEmpresa() {
+    vista.mostrarPlantilla('menuDeEmpresa', 'Container')
+}
+
 function mostrarEmpresas() {
     vista.mostrarPlantilla('listaEmpresa', 'Container')
 }
