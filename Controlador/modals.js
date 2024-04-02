@@ -99,7 +99,7 @@ window.onclick = function (event) {
 
 /*------------------------------------------------------------------------menuLateralIzquierdo*/
 
-var menuLateral = document.getElementById("menuLateral");
+/**var menuLateral = document.getElementById("menuLateral");
 var btnMenuLateral = document.getElementById("btnMenuLateral");
 var FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
 
@@ -115,10 +115,10 @@ window.onclick = function (event) {
     if (event.target == menuLateral) {
         menuLateral.style.display = "none";
     }
-}
+}**/
 
 /*----------------------------------------------------------------------------manuNotificacionesLateralDerecho*/ 
-var modalNotificaciones = document.getElementById("modalNotificaciones");
+/**var modalNotificaciones = document.getElementById("modalNotificaciones");
 var btnNotificationes = document.getElementById("btnNotificationes");
 var FlechaAtrasMenuLateral = document.querySelectorAll (".FlechaAtrasMenuLateral");
 
@@ -135,10 +135,10 @@ window.onclick = function (event) {
     if (event.target == modalNotificaciones) {
         modalNotificaciones.style.display = "none";
     }
-}
+}**/
 /*-------------------------------------------------------------modalRecuperarContrasena*/
 
-var modalRecuperarContrasena = document.getElementById("modalRecuperarContrasena");
+/**var modalRecuperarContrasena = document.getElementById("modalRecuperarContrasena");
 var recordar = document.getElementById("recordar");
 var botonConfirmarRecuperar = document.getElementById ("botonConfirmarRecuperar");
 
@@ -157,10 +157,10 @@ window.onclick = function (event) {
         modalRecuperarContrasena.style.display = "none";
     }
 }
-
+**/
 
 /*--------------------------------------------------------------modalRecuperarcontraseñaEmpresa*/
-var modalRecuperarContrasenaEmpresa = document.getElementById("modalRecuperarContrasenaEmpresa");
+/***var modalRecuperarContrasenaEmpresa = document.getElementById("modalRecuperarContrasenaEmpresa");
 var btnRecordarContrasena = document.getElementById("btnRecordarContrasena");
 var botonConfirmarNombre = document.getElementById ("botonConfirmarNombre");
 
@@ -178,4 +178,4 @@ window.onclick = function (event) {
     if (event.target == modalRecuperarContrasenaEmpresa) {
         modalRecuperarContrasenaEmpresa.style.display = "none";
     }
-}
+}**/
