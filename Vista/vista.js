@@ -7,7 +7,7 @@ class Vista{
      * 
      * @param {*} plantilla: Template con el contenido a mostrar
      * @param {*} destino : Area donde se cargara el template
-     * @param {*} pantalla: no se si esto sirva 
+     * /**@param {*} pantalla:
      */
     mostrarPlantilla(plantilla, destino){
         let dest = document.getElementById(destino);
