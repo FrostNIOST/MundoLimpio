@@ -99,11 +99,24 @@ window.onclick = function (event) {
 
 /*------------------------------------------------------------------------menuLateralIzquierdo*/
 
-/**var menuLateral = document.getElementById("menuLateral");
-var btnMenuLateral = document.getElementById("btnMenuLateral");
-var FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
+const menuLateral = document.getElementById("menuLateral");
+const btnMenuLateral = document.getElementById("btnMenuLateral");
+const FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
 
-btnMenuLateral.onclick = function () {
+btnMenuLateral.addEventListener("click", () => {
+    menuLateral.classList.add("mostrar");
+    alert("prueba");
+});
+
+FlechaAtrasMenuLateral.addEventListener("click", () => {
+    menuLateral.classList.remove("mostrar");
+    alert("prueba2");
+});
+
+
+
+
+/**btnMenuLateral.onclick = function () {
     menuLateral.style.display = "block";
 }
 
@@ -115,7 +128,7 @@ window.onclick = function (event) {
     if (event.target == menuLateral) {
         menuLateral.style.display = "none";
     }
-}**/
+}*/
 
 /*----------------------------------------------------------------------------manuNotificacionesLateralDerecho*/ 
 /**var modalNotificaciones = document.getElementById("modalNotificaciones");
