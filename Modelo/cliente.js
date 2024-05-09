@@ -11,7 +11,7 @@ class usuario extends Connect {
     }
 
     setData(data) {
-        this.id = data.id_cliente;
+        this.id_usuario = data.id_cliente;
         this.nombre = data.nombre;
         this.correo = data.correo;
         this.celular = data.celular;
@@ -23,7 +23,7 @@ class usuario extends Connect {
 
     //Metodo para verificar login
     login(dataReq, loginCallback) {
-        const endpoint = '/user/login';
+        const endpoint = 'user/login';
         const method = 'POST';
         this.connect(dataReq, endpoint, method, loginCallback);
     }

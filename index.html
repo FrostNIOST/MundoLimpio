@@ -98,15 +98,15 @@
                 <div class="formulario">
                     <form method="post" id="FormLogin">
                         <div class="username">
-                            <input type="text" name="correo" name="NumeroContacto" required>
-                            <label> Correo o celular</label>
+                            <input type="text" name="correo" required>
+                            <label> Correo</label>
                         </div>
                          <div class="password">
-                            <input type="password" name="contraseña" required>
+                            <input type="password" name="password" required>
                             <label>Contraseña</label>
                         </div>                           
-                        <button class="BtnCrear" id="BtnIngresar" onclick="mostrarMenuUsuario()">Ingresar</button>                              
                     </form>
+                    <button class="BtnCrear" id="BtnIngresar" onclick="login()">Ingresar</button>                              
                     <button class="btnRecordar" id="recordar">Recuperar contraseña</button>  
                 </div>
             </div>                
@@ -1458,7 +1458,7 @@
     <!--------------------------------Controladores ---------------------------------------->
     <!--<script src="./Vista/js/view.js"></script>-->
     <script src="./Modelo/connect.js"></script>
-    <script src="./Controlador/modals.js"></script>
+    <!--<script src="./Controlador/modals.js"></script>-->
     <script src="./Vista/vista.js"></script>
     <script src="./Controlador/controlador.js"></script>
 

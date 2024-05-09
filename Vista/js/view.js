@@ -173,7 +173,7 @@ class Vista {
 
             let subTitle = document.createElement('div');
             subTitle.classList.add('card-subtitle', 'mb-2', 'text-body-secondary');
-            subTitle.textContent = element.subtitle;
+            subTitle.textContent = element.subtitle; 
             card.appendChild(subTitle);
 
             let p = document.createElement('p');
