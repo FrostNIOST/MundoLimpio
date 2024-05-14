@@ -60,8 +60,6 @@ function mostrarEnvios() {
 
 function mostrarPerfilUsuario() {
     vista.mostrarPlantilla('perfilUsuario', 'Container');
-
-
 }
 
 function mostarSobreNosotros() {

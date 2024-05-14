@@ -846,6 +846,8 @@ h1 {
 #LogoEmpresas {
   margin: 5%;
   border-radius: 25px;
+  width: 100px;
+  height: 100px;
 }
 
 nav {
@@ -1123,7 +1125,7 @@ nav {
 
 #menuLateral{
   position: relative;
-  display: none;
+  /*display: none;*/
   /*top: -130vh;*/
   min-height: 100%;
   width: 55%;
@@ -1203,7 +1205,7 @@ nav {
 }
 
 #modalNotificaciones #EncabezadoModal{
-  min-height: 20vh;
+  min-height:40vh;
   align-items: center;
 
 }
@@ -1216,11 +1218,11 @@ nav {
 }
 
 #modalNotificaciones #ContenidoModal{
-  min-height: 110vh;
+  min-height: 100vh;
 }
 
 #modalNotificaciones h3{
-  padding: 5%;
+  padding: 1% 5%;
 }
 
 #modalNotificaciones #ContenidoModal h4{
