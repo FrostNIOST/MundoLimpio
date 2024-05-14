@@ -32,6 +32,7 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
 /*---------------------------------------------------------------------Modificarcontraseña*/
 var modalCambiarContrasena = document.getElementById("modalCambiarContrasena");
 var btnCambiarContrasena = document.getElementById("btnCambiarContrasena");

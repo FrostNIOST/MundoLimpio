@@ -25,8 +25,13 @@ function registarEmpresa() {
     vista.mostrarPlantilla('formularioEmpresa', 'Container')
 }
 
-function mostrarMenuUsuario() {
+function login() {
+    //leer datos del formlario
+    data=
+    //consultar datos en la bd
+    //si existe desplegar ele menu de usuario
     vista.mostrarPlantilla('menuDeUsuario', 'Container')
+    //si no existe mostrar mensaje
 }
 
 function mostrarMenuEmpresa() {
@@ -54,7 +59,9 @@ function mostrarEnvios() {
 }
 
 function mostrarPerfilUsuario() {
-    vista.mostrarPlantilla('perfilUsuario', 'Container')
+    vista.mostrarPlantilla('perfilUsuario', 'Container');
+
+
 }
 
 function mostarSobreNosotros() {
