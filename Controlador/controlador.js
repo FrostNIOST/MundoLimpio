@@ -7,7 +7,6 @@ window.addEventListener('load', function() {
 });
 
 
-//window.onload=function(){paginaInicio()}
 
 
 function mostrarInicioUsuario(){
@@ -64,6 +63,10 @@ function mostarSobreNosotros() {
 
 function mostrarSoporte() {
     vista.mostrarPlantilla('preguntas', 'Container')
+}
+
+function mostrarConfig() {
+    vista.mostrarPlantilla('configuracion', 'Container')
 }
 
 function mostrarFuncionamiento() {

@@ -52,7 +52,7 @@ window.onclick = function (event) {
     }
 }
 
-/*-----------------------------------------------------------------------MpdifiCorreo*/
+/*-----------------------------------------------------------------------Mpdifitelefono*/
 
 var modalCambiarTelefono = document.getElementById("modalCambiarTelefono");
 var btnCambiarTelefono = document.getElementById("btnCambiarTelefono");
@@ -98,20 +98,52 @@ window.onclick = function (event) {
 }
 
 /*------------------------------------------------------------------------menuLateralIzquierdo*/
+if(document.getElementById("menuLateral")){
+    var menuLateral=document.getElementById('menuLateral');
+    var btnMenuLateral = document.getElementById("btnMenuLateral");
+    var FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
 
-const menuLateral = document.getElementById("menuLateral");
-const btnMenuLateral = document.getElementById("btnMenuLateral");
-const FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
+    btnMenuLateral.onclick=function(){
+        menuLateral.classList.add("show");
+        alert("hola")
+    }
 
-btnMenuLateral.addEventListener("click", () => {
+    FlechaAtrasMenuLateral.onlick=function(){
+        menuLateral.classList.remove("show");
+    }
+
+}
+
+
+
+/**var menuLateral = document.getElementById("menuLateral");
+var btnMenuLateral = document.getElementById("btnMenuLateral");
+var FlechaAtrasMenuLateral = document.querySelectorAll(".FlechaAtrasMenuLateral");
+
+btnMenuLateral.onclick = function () {
     menuLateral.classList.add("mostrar");
-    alert("prueba");
+    alert("Se ha mostrado el menú lateral")
+}
+
+FlechaAtrasMenuLateral.onclick = function () {
+    menuLateral.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == menuLateral) {
+        menuLateral.style.display = "none";
+    }
+}
+
+
+/**btnMenuLateral.addEventListener("click", () => {
+    menuLateral.classList.add("mostrar");
 });
 
 FlechaAtrasMenuLateral.addEventListener("click", () => {
     menuLateral.classList.remove("mostrar");
-    alert("prueba2");
 });
+
 
 
 
