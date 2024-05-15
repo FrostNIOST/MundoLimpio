@@ -1,4 +1,4 @@
-class usuario extends Connect {
+class Usuario extends Connect {
     constructor() {
         super();
         this.id_usuario = 0;
@@ -27,6 +27,15 @@ class usuario extends Connect {
         const method = 'POST';
         this.connect(dataReq, endpoint, method, loginCallback);
     }
+
+        //Metodo para verificar login
+    register(dataReq, loginCallback) {
+        const endpoint = 'clientes/register';
+        const method = 'POST';
+        this.connect(dataReq, endpoint, method, loginCallback);
+    }
+
+    
 
 
 }

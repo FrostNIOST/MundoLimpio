@@ -1,4 +1,6 @@
-vista = new Vista()
+let vista = new Vista();
+let usuario = new Usuario();
+//let empresa = new Empresa();
 
 window.addEventListener('load', function() {
 
@@ -7,19 +9,21 @@ window.addEventListener('load', function() {
 });
 
 
-
-
 function mostrarInicioUsuario(){
     vista.mostrarPlantilla('loginUsuario', 'Container');
+}
+
+function registrarUsuario(){
+    let data=vista.getform("formUsuario")
 }
 
 function mostrarInicioEmpresa() {
     vista.mostrarPlantilla('loginEmpresa', 'Container')
 }
 
-function registrarUsuario() {
+/**function registrarUsuario() {
     vista.mostrarPlantilla('formRegisUsuario', 'Container')
-}
+}*/
 
 function registarEmpresa() {
     vista.mostrarPlantilla('formularioEmpresa', 'Container')
@@ -27,12 +31,15 @@ function registarEmpresa() {
 
 function login() {
     //leer datos del formlario
-    data=
+    let data= 
     //consultar datos en la bd
     //si existe desplegar ele menu de usuario
     vista.mostrarPlantilla('menuDeUsuario', 'Container')
     //si no existe mostrar mensaje
 }
+
+
+
 
 function mostrarMenuEmpresa() {
     vista.mostrarPlantilla('menuDeEmpresa', 'Container')

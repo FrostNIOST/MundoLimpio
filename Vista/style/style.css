@@ -1125,7 +1125,7 @@ nav {
 
 #menuLateral{
   position: relative;
-  /*display: none;*/
+  display: none;
   /*top: -130vh;*/
   min-height: 100%;
   width: 55%;

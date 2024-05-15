@@ -497,7 +497,7 @@
                             <label> Email </label>
                         </div>
                         <div class="phone">
-                            <input type="tel" name="numero_contacto" id="NumeroCelular" required>
+                            <input type="tel" name="celular" id="NumeroCelular" required>
                             <label> Celular </label>
                         </div>
                         <div class="birthdate">
@@ -505,7 +505,7 @@
                             <label> Fecha de nacimiento </label>
                         </div>
                         <div class="password">
-                            <input type="password" name="contraseña" id="Contraseña" required>
+                            <input type="password" name="password" id="Contraseña" required>
                             <label> Contraseña </label>
                         </div>
                         <div class="confirm-password">
@@ -1583,19 +1583,23 @@
                     <li id="ubicacion">Ubicación <input type="text" value="calle 123, Bogotá"></li>
                 </ul>
                 <hr>
-                <ul class="detalleEnvioLista">
-                    <li id="envio">Envio: <input type="text" value="0987654321"></li>
-                    <li id="estado">Estado: <input type="text" value="Recibido"></li>
-                    <li id="tipoDeResiduo">Tipo de residuo: <input type="text" value="Carton"></li>
-                    <li id="cantidad">Cantidad: <input type="text" value="20 Kgs"></li>
-                    <li id="Fecha">Fecha: <input type="text" value="15/08/2023"></li>
-                    <li id="empresaRecolectora">Empresa recolectora: <input type="text" value="Ciudad Limpia"></li>
-                    <li id="ubicacion">Ubicación: <input type="text" value="calle 1800 bt, Bogotá"></li>
-                </ul>
-
-
             </div>
         </div>
+    </template>
+
+
+    <template id="cuadroDetallesEnvios">
+        <div class="detallesEnvios">
+            <ul class="detalleEnvioLista">
+                <li id="envio">Envio: <input type="text" value="1234567890"></li>
+                <li id="estado">Estado: <input type="text" value="En proceso"></li>
+                <li id="tipoDeResiduo">Tipo de residuo: <input type="text" value="Papel"></li>
+                <li id="cantidad">Cantidad: <input type="text" value="35 Kgs"></li>
+                <li id="Fecha">Fecha: <input type="text" value="15/09/2024"></li>
+                <li id="empresaRecolectora">Empresa recolectora: <input type="text" value="Recicorp"></li>
+                <li id="ubicacion">Ubicación <input type="text" value="calle 123, Bogotá"></li>
+            </ul>
+            <hr>
     </template>
 
 
@@ -1933,8 +1937,9 @@
 
     <!--------------------------------Controladores ---------------------------------------->
     <!--<script src="./Vista/js/view.js"></script>-->
-    <script src="./Modelo/connect.js"></script>
     <!--<script src="./Controlador/modals.js"></script>-->
+    <script src="./Modelo/connect.js"></script>
+    <script src="./Modelo/cliente.js"></script>
     <script src="./Vista/vista.js"></script>
     <script src="./Controlador/controlador.js"></script>
 
