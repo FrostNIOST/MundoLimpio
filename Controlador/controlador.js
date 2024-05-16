@@ -1,5 +1,5 @@
 let vista = new Vista();
-let usuario = new Usuario();
+let cliente = new Cliente();
 //let empresa = new Empresa();
 
 window.addEventListener('load', function() {
@@ -9,28 +9,56 @@ window.addEventListener('load', function() {
 });
 
 
+/**function crearUsuario(){
+    vista.mostrarPlantilla('loginUsuario', 'Container');
+}*/
+
 function mostrarInicioUsuario(){
     vista.mostrarPlantilla('loginUsuario', 'Container');
 }
 
-function registrarUsuario(){
-    let data=vista.getform("formUsuario")
+
+function crearUsuario(){
+        //leer datos del formulario
+    let data=vista.getForm("formUsuario");
+    if (data.ok) {
+        //consultar datos en la bd
+        cliente.register(data, function (res) {
+            console.log(res)
+            if (res.success) {
+                //mostrar mensaje de exito
+                vista.mostrarPlantilla('loginUsuario', 'Container');
+                vista.mostrarMensaje('Usuario registrado con exito');
+            }
+                else {
+                    //mostrar mensaje de error
+                    vista.mostrarMensaje (
+                        false, "Error al crear usuario"
+                    );
+                }
+        });
+    }
+}
+
+function crearEmpresa() {
+    vista.mostrarPlantilla('loginEmpresa', 'Container')
 }
 
 function mostrarInicioEmpresa() {
     vista.mostrarPlantilla('loginEmpresa', 'Container')
 }
 
-/**function registrarUsuario() {
-    vista.mostrarPlantilla('formRegisUsuario', 'Container')
-}*/
 
-function registarEmpresa() {
+function mostrarFormUsuario() {
+    vista.mostrarPlantilla('formRegisUsuario', 'Container')
+}
+
+function mostrarFormEmpresa() {
     vista.mostrarPlantilla('formularioEmpresa', 'Container')
 }
 
 function login() {
-    //leer datos del formlario
+    //leer datos del formulario
     let data= 
     //consultar datos en la bd
     //si existe desplegar ele menu de usuario

@@ -1,4 +1,4 @@
-class Usuario extends Connect {
+class Cliente extends Connect {
     constructor() {
         super();
         this.id_usuario = 0;
@@ -20,7 +20,7 @@ class Usuario extends Connect {
         this.password = data.password; //Solo para registro
     }
 
-
+    
     //Metodo para verificar login
     login(dataReq, loginCallback) {
         const endpoint = 'user/login';
@@ -28,7 +28,7 @@ class Usuario extends Connect {
         this.connect(dataReq, endpoint, method, loginCallback);
     }
 
-        //Metodo para verificar login
+        //Metodo para registrar un usuario tipo cliente
     register(dataReq, loginCallback) {
         const endpoint = 'clientes/register';
         const method = 'POST';

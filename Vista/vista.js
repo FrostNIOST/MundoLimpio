@@ -28,11 +28,11 @@ class Vista {
      * valida que existan datos en todos los campos
      * Los devuelve como un objeto al que incluye una bandera que indica si los datos son válidos
      * y un mensaje de error si no se ingresaron datos
-     * @param {str} formulario: id del formulario a leer 
+     * @param {str} formUsuario: id del formulario a leer 
      * @returns {obj} data: objeto con los datos del formulario
      */
-    getForm(formulario) {
-        let form = document.getElementById(formulario);
+    getForm(formUsuario) {
+        let form = document.getElementById(formUsuario);
         let datos = new FormData(form);
         let data = {};
         data.ok = true; //Bandera para indicar si los datos son válidos
@@ -77,7 +77,7 @@ class Vista {
         mensajeDiv.style.borderRadius = '10px';
 
         // Mostrar el mensaje
-        document.getElementById('container').appendChild(mensajeDiv);
+        document.getElementById('Contenido').appendChild(mensajeDiv);
 
         // Eliminar el mensaje después de 3 segundos
         setTimeout(() => {
