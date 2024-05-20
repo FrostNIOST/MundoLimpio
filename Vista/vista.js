@@ -63,8 +63,10 @@ class Vista {
         mensajeDiv.id = 'mensaje-error'; // Para poder eliminarlo después
         mensajeDiv.style.position = 'absolute';
         mensajeDiv.style.width = '80%';
+        mensajeDiv.style.height = '5%'
         mensajeDiv.style.right = '10%';
         mensajeDiv.style.bottom = '20%';
+        mensajeDiv.innerHTML = ("Exito al crear usuario")
         if (ok) {
             mensajeDiv.style.backgroundColor = 'green';
         }
@@ -75,9 +77,10 @@ class Vista {
         mensajeDiv.style.textAlign = 'center';
         mensajeDiv.style.padding = '10px';
         mensajeDiv.style.borderRadius = '10px';
+        mensajeDiv.innerHTML = ("error al crear usuario")
 
         // Mostrar el mensaje
-        document.getElementById('Contenido').appendChild(mensajeDiv);
+        document.getElementById('Container').appendChild(mensajeDiv);
 
         // Eliminar el mensaje después de 3 segundos
         setTimeout(() => {
