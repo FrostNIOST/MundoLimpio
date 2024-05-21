@@ -2,10 +2,10 @@ let vista = new Vista();
 let cliente = new Cliente();
 //let empresa = new Empresa();
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
 
     vista.mostrarPlantilla('paginaInicio', 'Container');
-    
+
 });
 
 
@@ -13,29 +13,30 @@ window.addEventListener('load', function() {
     vista.mostrarPlantilla('loginUsuario', 'Container');
 }*/
 
-function mostrarInicioUsuario(){
+function mostrarInicioUsuario() {
     vista.mostrarPlantilla('loginUsuario', 'Container');
 }
 
 
-function crearUsuario(){
-        //leer datos del formulario
-    let data=vista.getForm("formUsuario");
+function crearUsuario() {
+    //leer datos del formulario
+    let data = vista.getForm("formUsuario");
     if (data.ok) {
         //consultar datos en la bd
         cliente.register(data, function (res) {
             console.log(res)
             if (res.success) {
-                //mostrar mensaje de exito
+                //mostrarel template correspondiente
                 vista.mostrarPlantilla('loginUsuario', 'Container');
+                //mostrar mensaje de exito
                 vista.mostrarMensaje('Usuario registrado con exito');
             }
-                else {
-                    //mostrar mensaje de error
-                    vista.mostrarMensaje (
-                        false, "Error al crear usuario"
-                    );
-                }
+            else {
+                //mostrar mensaje de error
+                vista.mostrarMensaje(
+                    false, "Error al crear usuario"
+                );
+            }
         });
     }
 }
@@ -57,17 +58,50 @@ function mostrarFormEmpresa() {
     vista.mostrarPlantilla('formularioEmpresa', 'Container')
 }
 
-function login() {
+/*function login() {
     //leer datos del formulario
-    let data= 
-    //consultar datos en la bd
-    //si existe desplegar ele menu de usuario
-    vista.mostrarPlantilla('menuDeUsuario', 'Container')
+    let data =
+        //consultar datos en la bd
+        //si existe desplegar ele menu de usuario
+        vista.mostrarPlantilla('menuDeUsuario', 'Container')
     //si no existe mostrar mensaje
+}*/
+
+
+function login() {
+    let data = vista.getForm('FormLogin');
+    if (data.ok) {
+        //Validar datos en la tabla clientes o empresas
+        cliente.login(data, function (data) {
+            if (data.success) {
+                if (data.length == 0) {
+                    vista.mostrarMensaje(false, 'Usuario o contraseña incorrectos');
+                    return;
+                }
+                //Redirigir a la pantalla correspondiente
+                if (data.user.tipo == 'cliente') {
+                    const regUsuario = {
+                        id_cliente: data.user.id,
+                        name: data.user.name
+                    };
+                    usuario.setData(regUsuario);
+                    vista.mostrarPlantilla('menuDeUsuario', 'Container');
+                    mostrarMenuUsuario();
+                } else {
+                    const regEmpresa = {
+                        id_empresa: data.user.id,
+                        nombre_empresa: data.user.nombre
+                    };
+                    empresa.setData(regEmpresa);
+                    vista.mostrarPlantilla('menuDeEmpresa', 'Container');
+                    mostrarMenuEmpresa();
+                }
+            } else {
+                vista.mostrarMensaje(false, 'Error al realizar la consulta en la base de datos');
+            }
+        });
+    }
 }
-
-
-
 
 function mostrarMenuEmpresa() {
     vista.mostrarPlantilla('menuDeEmpresa', 'Container')

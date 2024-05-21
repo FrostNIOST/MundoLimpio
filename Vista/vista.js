@@ -66,7 +66,7 @@ class Vista {
         mensajeDiv.style.height = '5%'
         mensajeDiv.style.right = '10%';
         mensajeDiv.style.bottom = '20%';
-        mensajeDiv.innerHTML = ("Exito al crear usuario")
+        //mensajeDiv.innerHTML = ("Exito al crear usuario")
         if (ok) {
             mensajeDiv.style.backgroundColor = 'green';
         }
@@ -77,7 +77,7 @@ class Vista {
         mensajeDiv.style.textAlign = 'center';
         mensajeDiv.style.padding = '10px';
         mensajeDiv.style.borderRadius = '10px';
-        mensajeDiv.innerHTML = ("error al crear usuario")
+        //mensajeDiv.innerHTML = ("error al crear usuario")
 
         // Mostrar el mensaje
         document.getElementById('Container').appendChild(mensajeDiv);
@@ -87,6 +87,11 @@ class Vista {
             mensajeDiv.remove();
         }, 3000);
     }
+
+
+
+
+
 
 
     /**avanzarPantalla(pantalla){
