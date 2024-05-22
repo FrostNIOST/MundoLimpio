@@ -1,6 +1,6 @@
 let vista = new Vista();
 let cliente = new Cliente();
-//let empresa = new Empresa();
+let empresa = new Empresa();
 
 window.addEventListener('load', function () {
 
@@ -42,8 +42,28 @@ function crearUsuario() {
 }
 
 function crearEmpresa() {
-    vista.mostrarPlantilla('loginEmpresa', 'Container')
+    //leer datos del formulario
+    let data = vista.getForm("formEmpresa");
+    if (data.ok) {
+        //consultar datos en la bd
+        empresa.register(data, function (res) {
+            console.log(res)
+            if (res.success) {
+                //mostrarel template correspondiente
+                vista.mostrarPlantilla('loginUsuario', 'Container');
+                //mostrar mensaje de exito
+                vista.mostrarMensaje('Usuario registrado con exito');
+            }
+            else {
+                //mostrar mensaje de error
+                vista.mostrarMensaje(
+                    false, "Error al crear usuario"
+                );
+            }
+        });
+    }
 }
+
 
 function mostrarInicioEmpresa() {
     vista.mostrarPlantilla('loginEmpresa', 'Container')
@@ -74,27 +94,20 @@ function login() {
         //Validar datos en la tabla clientes o empresas
         cliente.login(data, function (data) {
             if (data.success) {
-                if (data.length == 0) {
+                if (data.data.length == 0) {
                     vista.mostrarMensaje(false, 'Usuario o contraseña incorrectos');
                     return;
                 }
                 //Redirigir a la pantalla correspondiente
-                if (data.user.tipo == 'cliente') {
-                    const regUsuario = {
-                        id_cliente: data.user.id,
-                        name: data.user.name
-                    };
-                    usuario.setData(regUsuario);
+                if (data.data[0].tipo == 'cliente') {
+
+                    cliente.setData(data.data[0]);
                     vista.mostrarPlantilla('menuDeUsuario', 'Container');
-                    mostrarMenuUsuario();
+                    //mostrarMenuUsuario();
                 } else {
-                    const regEmpresa = {
-                        id_empresa: data.user.id,
-                        nombre_empresa: data.user.nombre
-                    };
-                    empresa.setData(regEmpresa);
+                    empresa.setData(data.data[0]);
                     vista.mostrarPlantilla('menuDeEmpresa', 'Container');
-                    mostrarMenuEmpresa();
+                    //mostrarMenuEmpresa();
                 }
             } else {
                 vista.mostrarMensaje(false, 'Error al realizar la consulta en la base de datos');
@@ -103,9 +116,9 @@ function login() {
     }
 }
 
-function mostrarMenuEmpresa() {
+/*function mostrarMenuEmpresa() {
     vista.mostrarPlantilla('menuDeEmpresa', 'Container')
-}
+}*/
 
 function mostrarEmpresas() {
     vista.mostrarPlantilla('listaEmpresa', 'Container')

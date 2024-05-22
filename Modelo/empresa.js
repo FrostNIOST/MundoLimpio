@@ -1,29 +1,33 @@
-class Cliente extends Connect {
+class Empresa extends Connect {
     constructor() {
         super();
-        this.id_cliente = 0;
-        this.nombre = "";
+        this.id_empresa = 0;
+        this.nombre_empresa = "";
+        this.NIT = 0;
+        this.telefono = "";
+        this.direccion = "";
         this.correo = "";
-        this.celular = "";
-        this.fecha_nacimiento = "";
-        this.tipo = "";
         this.password = "";
         this.status = "";
+        this.especialidad = "";
+        this.tipo = "";
     }
 
     setData(data) {
-        this.id_cliente = data.id_cliente;
-        this.nombre = data.nombre;
+        this.id_empresa = data.id_empresa;
+        this.nombre_empresa = data.nombre_empresa;
+        this.NIT = data.NIT;
+        this.telefono = data.telefono;
+        this.direccion = data.direccion;
         this.correo = data.correo;
-        this.celular = data.celular;
-        this.fecha_nacimiento = data.fecha_nacimiento;
-        this.tipo = data.tipo;
         this.password = data.password; //Solo para registro
         this.status = data.status;
+        this.especialidad = data.especialidad;
+        this.tipo = data.tipo;
     }
 
     
-        //Metodo para verificar login
+    //Metodo para verificar login
     login(dataReq, loginCallback) {
         const endpoint = 'user/login';
         const method = 'POST';
@@ -32,54 +36,53 @@ class Cliente extends Connect {
 
         //Metodo para registrar un usuario tipo cliente
     register(dataReq, loginCallback) {
-        const endpoint = 'clientes/register';
+        const endpoint = 'empresas/register';
+        const method = 'POST';
+        this.connect(dataReq, endpoint, method, loginCallback);
+
+    }
+                //metodo para mostrar los datos  que el cliente tiene en recoleccion
+    list(dataReq, loginCallback) {
+        const endpoint = 'empresas/recoleccion';
+        const method = 'GET';
+        this.connect(dataReq, endpoint, method, loginCallback);
+    }      
+
+        //Metodo para registrar un usuario tipo cliente
+    register(dataReq, loginCallback) {
+        const endpoint = 'empresas/register';
         const method = 'POST';
         this.connect(dataReq, endpoint, method, loginCallback);
     }
-
+    
         //metodo para actualizar contraseña de usuario tipo cliente
     updatePassword(dataReq, loginCallback) {
-        const endpoint = 'clientes/password';
+        const endpoint = 'empresas/password';
         const method = 'POST';
         this.connect(dataReq, endpoint, method, loginCallback);
     }
 
         //metodo para actualizar los datos de usuario tipo cliente
     update(dataReq, loginCallback) {
-        const endpoint = 'clientes';
+        const endpoint = 'empresas';
         const method = 'PUT';
         this.connect(dataReq, endpoint, method, loginCallback);
     }
 
         //metodo para actualizar el status de un usuario tipo cliente
     defuse(dataReq, loginCallback) {
-        const endpoint = 'clientes';
+        const endpoint = 'empresas';
         const method = 'PATCH';
         this.connect(dataReq, endpoint, method, loginCallback);
     }
 
-        //metodo para ingresar datos en la tabla de recoleccion
-    recolectar(dataReq, loginCallback) {
-        const endpoint = 'clientes/recoleccion';
-        const method = 'POST';
-        this.connect(dataReq, endpoint, method, loginCallback);
-    }
-
-        //metodo para insertar datos en la tabla de materiales
-    recolectarMaterial(dataReq, loginCallback) {
-        const endpoint = 'clientes/recolectarMaterial';
-        const method = 'POST';
-        this.connect(dataReq, endpoint, method, loginCallback);
-    }
-
         //metodo para mostrar los datos  que el cliente tiene en recoleccion
-    list(dataReq, loginCallback) {
-        const endpoint = 'clientes/recoleccion';
+    empresas(dataReq, loginCallback) {
+        const endpoint = 'user/empresas';
         const method = 'GET';
         this.connect(dataReq, endpoint, method, loginCallback);
     }
 
-    
 
 
 }
