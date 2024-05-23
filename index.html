@@ -266,9 +266,9 @@
         <div class="row">
             <div class="col-12" id="Contenido">
                 <button type="button" class="btn btn-success" id="BtnInicioUsuario"
-                    onclick="mostrarInicioUsuario()">Ingresar como usuario</button>
-                <button type="button" class="btn btn-success" id="BtnInicioEmpresa"
-                    onclick="mostrarInicioEmpresa()">Ingresar como empresa</button>
+                    onclick="mostrarInicioUsuario()">Ingresar </button>
+                <!--<button type="button" class="btn btn-success" id="BtnInicioEmpresa"
+                    onclick="mostrarInicioEmpresa()">Ingresar como empresa</button>-->
             </div>
         </div>
         <!---------------------------------------------------------------------------------------------pie de pagina-->
@@ -356,17 +356,17 @@
     </template>
 
 
-    <template id="loginEmpresa">
-        <div class="row" class="Encabezado">
+    <!--<template id="loginEmpresa">
+        <div class="row" class="Encabezado">-->
             <!--Area donde se ubica el logo----------------------------------------------------------->
-            <div class="col-12">
+            <!--<div class="col-12">
                 <img src="./Recursos/page/logo redimencionado.png" alt="logo" id="Logo" width="200px">
                 <h1 class="d-flex justify-content-center">Empresas</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row">-->
             <!--Contenido------------------------------------------------------------------------------------------------------>
-            <div class="col-12">
+            <!--<div class="col-12">
                 <div class="Contenido">
                     <div class="formulario">
                         <form method="post" id="FormLogin">
@@ -403,7 +403,7 @@
                         </svg></button>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-------------------------------------------------------------------Modal loginEmpresa -->
         <!--<div id="modalRecuperarContrasenaEmpresa" class="modal">
@@ -418,9 +418,9 @@
             </div>
                 
         </div>-->
-
+<!--
     </template>
-
+-->
 
     <template id="formularioEmpresa">
         <div class="row">
@@ -478,7 +478,7 @@
                         <button class="BtnCrear" onclick="crearEmpresa()">Crear</button>
                     </form>
                     <h4 class="d-flex justify-content-center 100%">Ya tienes cuenta <button class="BtnIniciarSesion"
-                            onclick="mostrarInicioEmpresa()">Inicia sesión</button>.</h4>
+                            onclick="mostrarInicioUsuario()">Inicia sesión</button>.</h4>
                 </div>
 
             </div>
@@ -1503,13 +1503,31 @@
                 <div class="Envios d-flex justify-content-between">
                     <button id="btnHistorialEnvios" onclick="mostrarHistorialEnvios()">Historial</button><button
                         id="btnSolicitudEnvios" onclick="mostarSolicitudEnvios()">Solicitar envio</button>
-                </div>
-                <div class="formulario" id="formSolicitarEnvio">
-                    <form method="post">
-                        <div class="birthdate d-flex">
+                    </div>
+                    <div class="formulario">
+                        <form id="formSolicitarEnvio">
+                            <div class="confirm-password">
+                                <input type="text" name="id_empresa" required>
+                                <label> Empresa a solicitar</label>
+                            </div>
+                            <div class="birthdate">
+                                <input type="text" name="ubicacion" id="ubicacion" required>
+                                <label> Dirección del envio </label>
+                            </div>
+                            <div class="birthdate d-flex">
                             <input type="date" name="fecha" id="FechaDeNacimiento" required>
                             <label> Fecha del intercambio</label>
                         </div>
+                        <select name="id_materia" id="materiaPrima" required>
+                            <option value="0">Seleccione una materia prima</option>
+                            <option value="1">Botellas de agua, envases de alimentos, bolsas de plastico y envases de
+                                detergentes</option>
+                            <option value="2">Carton, cartulina, cartón corrugado</option>
+                            <option value="3">Periodicos, revistas y papel de oficina</option>
+                            <option value="4">Latas de aluminio, latas de acero y envases de metal</option>
+                            <option value="5">Ropa y ropa de cama</option>
+                            <option value="6">Botellas de vidrio, frascos y tarros</option>
+                        </select>
                         <div class="username">
                             <input type="number" name="cantidad_Kg" id="cantidadMateria" required>
                             <label> cantidad (Kg)</label>
@@ -1518,35 +1536,20 @@
                             <input type="text" name="id_materia" id="materiaPrima" required>
                             <label> Materia prima </label>
                         </div>-->
-                        <select name="id_materia" id="materiaPrima" required>
-                            <label for="materiaPrima">Materia prima</label>
-                            <option value="botellas">Botellas de plastico</option>
-                            <option value="cartulina">Cartulina</option>
-                            <option value="cartoncorrugado">Cartoncorrugado</option>
-                            <option value="papelCuaderno">Papel de cuaderno</option>
-                        </select>
+                        <!--<select name="id_categoria" id="categoriaMateria" required>
+                            <option value="0">Seleccione una categoria</option>
+                            <option value="plastico">Plástico</option>
+                            <option value="carton">Carton</option>
+                            <option value="Papel">Papel</option>
+                        </select>-->
                         <!--<div class="phone">
                             <input type="tel" name="id_categoria" id="NumeroCelular" required>
                             <label> Categoria </label>
                         </div>-->
-                        <select name="id_categoria" id="categoriaMateria" required>
-                            <label for="categoriaMateria">categoria</label>
-                            <option value="plastico">Plástico</option>
-                            <option value="carton">Carton</option>
-                            <option value="Papel">Papel</option>
-                        </select>
 
-                        <div class="birthdate">
-                            <input type="text" name="Ubicacion" id="ubicacion" required>
-                            <label> Dirección del envio </label>
-                        </div>
-                        <div class="confirm-password">
-                            <input type="text" name="id_empresa" required>
-                            <label> Empresa a solicitar</label>
-                        </div>
-                        <button class="agregarOtro">Agregar otro +</button>
-                        <button class="btnSolicitar">Solicitar</button>
                     </form>
+                    <button class="agregarOtro">Agregar otro +</button>
+                    <button class="btnSolicitar">Solicitar</button>
 
                 </div>
 
@@ -1602,13 +1605,13 @@
     <template id="cuadroDetallesEnvios">
         <div class="detallesEnvios">
             <ul class="detalleEnvioLista">
-                <li id="envio">Envio: <input type="text" value="1234567890"></li>
-                <li id="estado">Estado: <input type="text" value="En proceso"></li>
-                <li id="tipoDeResiduo">Tipo de residuo: <input type="text" value="Papel"></li>
-                <li id="cantidad">Cantidad: <input type="text" value="35 Kgs"></li>
-                <li id="Fecha">Fecha: <input type="text" value="15/09/2024"></li>
-                <li id="empresaRecolectora">Empresa recolectora: <input type="text" value="Recicorp"></li>
-                <li id="ubicacion">Ubicación <input type="text" value="calle 123, Bogotá"></li>
+                <li id="envio">Envio: <input type="text" value="1234567890" name=""></li>
+                <li id="estado">Estado: <input type="text" value="En proceso" name=""></li>
+                <li id="tipoDeResiduo">Tipo de residuo: <input type="text" value="Papel" name=""></li>
+                <li id="cantidad">Cantidad: <input type="text" value="35 Kgs" name=""></li>
+                <li id="Fecha">Fecha: <input type="text" value="15/09/2024" name=""></li>
+                <li id="empresaRecolectora">Empresa recolectora: <input type="text" value="Recicorp" name=""></li>
+                <li id="ubicacion">Ubicación <input type="text" value="calle 123, Bogotá" name=""></li>
             </ul>
             <hr>
     </template>

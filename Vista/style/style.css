@@ -169,7 +169,10 @@ h1 {
 
 
 #formEmpresa select{
-  padding: 1.5%;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin-top: 14%;
 }
 
 #bttnRegisEmpresa{
@@ -222,7 +225,7 @@ h1 {
 .confirm-password {
     position: relative;
     border-bottom: 2px solid #A4B092;
-    margin: 30px 0;
+    margin: 10px 0;
     width: auto;
 
 }
@@ -260,7 +263,7 @@ h1 {
     border: none;
 }
 
-.username label,
+/*.username label,
 .email label,
 .phone label,
 .birthdate label,
@@ -275,7 +278,7 @@ h1 {
     font-size: 21px;
     pointer-events: none;
     transition: .5s;
-}
+}*/
 
 /*.formulario input[type="text"],
 .formulario input[type="password"] {
@@ -321,7 +324,7 @@ h1 {
     border: none;
 }
 
-.username label,
+/*.username label,
 .email label,
 .phone label,
 .birthdate label,
@@ -332,11 +335,11 @@ h1 {
     top: 20px;
     left: 10px;
     color: #B6C0A8;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     font-size: 21px;
     pointer-events: none;
     transition: .5s;
-}
+}*/
 
 .username span::before,
 .email span::before,
@@ -1010,14 +1013,19 @@ nav {
 
 .formulario select{
   width: 100%;
-  padding: 5%;
+  padding: 0%;
   background-color: inherit;
   border: none;
-  font-size: 20px;
+  font-size: inherit;
   font-family: inherit;
-  color: #A4B092;
-  justify-content: start;
-  justify-self: start;
+  color: inherit;
+  /*justify-content: start;*/
+  /*justify-self: start;*/
+  margin-top: 45px;
+}
+
+.formulario option {
+  width: inherit;
 }
 
 .btnSolicitar {
@@ -1033,7 +1041,7 @@ nav {
   font-family: "Patua One", serif;
   font-weight: 400;
   font-style:normal;
-  margin-left: 25%;
+  margin-left: 30%;
   margin-top: 10%;
   margin-bottom: 10%;
 }

@@ -180,6 +180,53 @@ function mostarSolicitudEnvios() {
     vista.mostrarPlantilla('solicitarEnvios', 'Container')
 }
 
+function solicitarEnvios (){
+//leer datos del formulario por parte del usuario tipo cliente
+    let data = vista.getForm("formSolicitarEnvio");
+    if (data.ok) {
+        //consultar datos en la bd
+        cliente.recolectar(data, function (res) {
+            console.log(res)
+            if (res.success) {
+                //mostrarel template correspondiente
+                //vista.mostrarPlantilla('solicitarEnvios', 'Container');
+                //mostrar mensaje de exito
+                vista.mostrarMensaje('Usuario registrado con exito');
+            }
+            else {
+                //mostrar mensaje de error
+                vista.mostrarMensaje(
+                    false, "Error al crear usuario"
+                );
+            }
+        });
+    }
+}
+
+function recolectarMaterial (){
+    //leer datos del formulario por parte del usuario tipo cliente
+        let data = vista.getForm("formSolicitarEnvio");
+        if (data.ok) {
+            //consultar datos en la bd
+            cliente.recolectar(data, function (res) {
+                console.log(res)
+                if (res.success) {
+                    //mostrarel template correspondiente
+                    vista.mostrarPlantilla('solicitarEnvios', 'Container');
+                    //mostrar mensaje de exito
+                    vista.mostrarMensaje('Usuario registrado con exito');
+                }
+                else {
+                    //mostrar mensaje de error
+                    vista.mostrarMensaje(
+                        false, "Error al crear usuario"
+                    );
+                }
+            });
+        }
+    }
+
+
 function mostrarSolicitudRecolecciones() {
     vista.mostrarPlantilla('RecolecionesSolicitudEmpresa', 'Container')
 }
