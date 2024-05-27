@@ -9,6 +9,7 @@ class Cliente extends Connect {
         this.tipo = "";
         this.password = "";
         this.status = "";
+        this.id_empresa = "";
     }
 
     setData(data) {
@@ -20,6 +21,7 @@ class Cliente extends Connect {
         this.tipo = data.tipo;
         this.password = data.password; //Solo para registro
         this.status = data.status;
+        this.id_empresa = data.id_empresa;
     }
 
     

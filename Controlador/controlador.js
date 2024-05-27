@@ -180,35 +180,47 @@ function mostarSolicitudEnvios() {
     vista.mostrarPlantilla('solicitarEnvios', 'Container')
 }
 
-function solicitarEnvios (){
+function recolectar (){
 //leer datos del formulario por parte del usuario tipo cliente
     let data = vista.getForm("formSolicitarEnvio");
     if (data.ok) {
         //consultar datos en la bd
         cliente.recolectar(data, function (res) {
-            console.log(res)
+            console.log(res.insertId)
             if (res.success) {
-                //mostrarel template correspondiente
-                //vista.mostrarPlantilla('solicitarEnvios', 'Container');
-                //mostrar mensaje de exito
-                vista.mostrarMensaje('Usuario registrado con exito');
+                cliente.recolectarMaterial(data, function (res) {
+                    console.log(res)
+                    if (res.success) {
+                        //mostrarel template correspondiente
+                        vista.mostrarPlantilla('solicitarEnvios', 'Container');
+                        //mostrar mensaje de exito
+                        vista.mostrarMensaje('Usuario registrado con exito');
+                    }
+                    else {
+                        //mostrar mensaje de error
+                        vista.mostrarMensaje(
+                            false, "Error al crear usuario"
+                        );
+                    }
+                });
             }
             else {
                 //mostrar mensaje de error
                 vista.mostrarMensaje(
-                    false, "Error al crear usuario"
+                    false, "Error al crear solicitar recolección"
                 );
             }
         });
-    }
+    }    
+
 }
 
-function recolectarMaterial (){
+/**function recolectarMaterial (){
     //leer datos del formulario por parte del usuario tipo cliente
         let data = vista.getForm("formSolicitarEnvio");
         if (data.ok) {
             //consultar datos en la bd
-            cliente.recolectar(data, function (res) {
+            cliente.recolectarMaterial(data, function (res) {
                 console.log(res)
                 if (res.success) {
                     //mostrarel template correspondiente
@@ -224,7 +236,7 @@ function recolectarMaterial (){
                 }
             });
         }
-    }
+    }*/
 
 
 function mostrarSolicitudRecolecciones() {

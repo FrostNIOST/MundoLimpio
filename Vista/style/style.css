@@ -211,6 +211,7 @@ h1 {
     
 }
 
+
 .formulario form {
     padding: 40px;
     box-sizing: border-box;
@@ -1021,7 +1022,7 @@ nav {
   color: inherit;
   /*justify-content: start;*/
   /*justify-self: start;*/
-  margin-top: 45px;
+  margin-top: 10px;
 }
 
 .formulario option {
