@@ -88,10 +88,19 @@ class Vista {
         }, 3000);
     }
 
+    llenarSelect(lista, selector, clave, valor){
+        let select = document.getElementById(selector)
+        if (select) {
+            lista.forEach(function(empresa) {
+                let option = document.createElement('option');
+                option.value = empresa[clave];
+                option.textContent = empresa[valor];
+                select.appendChild(option);
 
-
-
-
+            });
+        }
+        
+    }
 
 
     /**avanzarPantalla(pantalla){

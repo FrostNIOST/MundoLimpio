@@ -1,6 +1,7 @@
 let vista = new Vista();
 let cliente = new Cliente();
 let empresa = new Empresa();
+let listaEmpresas = [];
 
 window.addEventListener('load', function () {
 
@@ -137,7 +138,15 @@ function mostrarAprenderReciclar() {
 }
 
 function mostrarEnvios() {
-    vista.mostrarPlantilla('solicitarEnvios', 'Container')
+    vista.mostrarPlantilla('solicitarEnvios', 'Container');
+    //consultar empresas en la db
+    empresa.empresas({}, function (data) {
+        if (data.success) {
+            listaEmpresas = data.data;
+            vista.llenarSelect(listaEmpresas, "id_empresa", "id_empresa", "nombre_empresa");
+            //vista.llenarSelectMaterial(listaMaterial, "id_material", "")
+        }
+    });
 }
 
 function mostrarPerfilUsuario() {
@@ -177,7 +186,15 @@ function mostrarHistorialEnvios() {
 }
 
 function mostarSolicitudEnvios() {
-    vista.mostrarPlantilla('solicitarEnvios', 'Container')
+    vista.mostrarPlantilla('solicitarEnvios', 'Container');
+    //consultar empresas en la db
+    empresa.empresas({}, function (data) {
+        if (data.success) {
+            listaEmpresas = data.data;
+            vista.llenarSelect(listaEmpresas, "id_empresa", "id_empresa", "nombre_empresa");
+            //vista.llenarSelectMaterial(listaMaterial, "id_material", "")
+        }
+    });
 }
 
 function recolectar (){
@@ -185,16 +202,17 @@ function recolectar (){
     let data = vista.getForm("formSolicitarEnvio");
     if (data.ok) {
         //consultar datos en la bd
+        data.id_cliente = cliente.id_cliente
         cliente.recolectar(data, function (res) {
-            console.log(res.insertId)
+            //console.log(res)
             if (res.success) {
-                cliente.recolectarMaterial(data, function (res) {
+                /*cliente.recolectarMaterial(data, function (res) {
                     console.log(res)
                     if (res.success) {
                         //mostrarel template correspondiente
-                        vista.mostrarPlantilla('solicitarEnvios', 'Container');
+                        //vista.mostrarPlantilla('solicitarEnvios', 'Container');
                         //mostrar mensaje de exito
-                        vista.mostrarMensaje('Usuario registrado con exito');
+                        vista.mostrarMensaje('Primera parte de la recoleccion hecha');
                     }
                     else {
                         //mostrar mensaje de error
@@ -202,7 +220,8 @@ function recolectar (){
                             false, "Error al crear usuario"
                         );
                     }
-                });
+                });*/
+                vista.mostrarPlantilla('solicitarEnvios', 'Container');
             }
             else {
                 //mostrar mensaje de error

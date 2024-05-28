@@ -208,6 +208,7 @@ h1 {
     background-color: #D1D5C3;
     border-radius: 50px;
     height: max-content;
+    border-color: #283E30;
     
 }
 
@@ -261,7 +262,8 @@ h1 {
     border-color: #A4B092;
     background: none;
     outline: none;
-    border: none;
+    /**border-color: #A4B092;*/
+    /**border: none;*/
 }
 
 /*.username label,
@@ -320,9 +322,12 @@ h1 {
     font-size: 21px;
     box-sizing: 70px;
     border-color: #A4B092;
-    background: none;
+    /**background: none;*/
+    background-color: #DAD7CD;
     outline: none;
-    border: none;
+    /*border-color: #5e695f;*/
+    border-radius: 10px;
+    /**border: none;*/
 }
 
 /*.username label,
@@ -1015,11 +1020,16 @@ nav {
 .formulario select{
   width: 100%;
   padding: 0%;
-  background-color: inherit;
-  border: none;
-  font-size: inherit;
+  height: 45px;
+  content: 25px;
+  border-radius: 10px;
+  /**background-color: inherit;*/
+  /**border: none;*/
+  border-color: #A4B092;
+  font-size: 20px;
   font-family: inherit;
   color: inherit;
+  background-color: #DAD7CD;
   /*justify-content: start;*/
   /*justify-self: start;*/
   margin-top: 10px;
