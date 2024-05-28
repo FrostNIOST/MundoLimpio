@@ -80,7 +80,7 @@ class Vista {
         //mensajeDiv.innerHTML = ("error al crear usuario")
 
         // Mostrar el mensaje
-        document.getElementById('Container').appendChild(mensajeDiv);
+        document.getElementById('Contenido').appendChild(mensajeDiv);
 
         // Eliminar el mensaje después de 3 segundos
         setTimeout(() => {
